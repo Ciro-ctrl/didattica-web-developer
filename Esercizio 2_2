@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+</body>
+</html><!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDeveloper esercizio 2_2</title>
+
+<style>
+       table{border:1px solid}
+       caption {border: 1px solid;}
+       caption { color: white;background-color:#313b45;}
+</style>
+
+</head>
+
+<body>
+
+
+<table width="100%">
+<caption><h1>VALORI NUTRIZIONALI</h1></caption>
+<thead>
+  <tr style="background-color: white;color:#2e3b4d">
+        <th></th>
+        <th>100g</th>
+        <th>porzione (150g)</th>
+        <th>AR (100g)</th>
+        <th>AR(150g)</th>
+        <th>Assunzioni di <br>riferimento</th>
+    </tr>
+</thead>
+<tbody>
+    <tr style="background-color: #deeaf5 ;color:#2e3b4d">
+        <td><strong>Energia</strong></td>
+        <td>1545kJ<br>364Kcal</td>
+        <td>2318kJ<br>546Kcal</td>
+        <td>18,4%</td>
+        <td>27,6%</td>
+        <td>8400kJ<br>2000Kcal</td>
+    </tr>
+</tbody>
+<tbody>
+    <tr style="background-color: white;color:#2e3b4d">
+        <td><strong>Grassi</strong></td>
+        <td>0.8g</td>
+        <td>1,2g</td>
+        <td>1,1%</td>
+        <td>1,7%</td>
+        <td>70g</td>
+    </tr>
+</tbody>
+<tbody>
+     <tr style="background-color: #deeaf5;color:#2e3b4d">
+        <td>di cui grassi saturi</td>
+        <td>0g</td>
+        <td>0g</td>
+        <td>0,0%</td>
+        <td>0,0%</td>
+        <td>20g</td>
+    </tr>
+</tbody>
+<tbody>
+     <tr style="background-color: white;color:#2e3b4d">
+        <td><strong>Carboidrati</strong></td>
+        <td>77g</td>
+        <td>116g</td>
+        <td>29,6%</td>
+        <td>44,4%</td>
+        <td>260g</td>
+    </tr>
+</tbody>
+<tbody>
+ <tr style="background-color:#deeaf5;color:#2e3b4d">
+        <td>di cui zuccheri</td>
+        <td>1.7g</td>
+        <td>2,6g</td>
+        <td>1,9%</td>
+        <td>2,8%</td>
+        <td>90g</td>
+    </tr>
+</tbody>
+<tbody>
+    <tr style="background-color: white;color:#2e3b4d">
+        <td><strong>Fibre</strong></td>
+        <td>2,4g</td>
+        <td>3,6g</td>
+        <td></td>
+        <td></td>
+        <td>g</td>
+    </tr>
+</tbody>
+<tbody>
+   <tr style="background-color: #deeaf5;color:#2e3b4d">
+        <td><strong>Proteine</strong></td>
+        <td>11g</td>
+        <td>16g</td>
+        <td>22,0%</td>
+        <td>33,0%</td>
+        <td>50g</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr style="background-color: white;color:#2e3b4d">
+        <td><strong>Fibre</strong></td>
+        <td>0,01g</td>
+        <td>0,02</td>
+        <td>0,2%</td>
+        <td>0,2%</td>
+        <td>6g</td>
+    </tr>
+</tfoot>
+</table>
+       
+</body>
+</html>
