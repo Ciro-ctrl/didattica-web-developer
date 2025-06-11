@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDevoler Esercizio2_1</title>
+</head>
+<body>
+
+<!---Eserzio numerato e puntato-->
+<ul>
+ <p>Lorem ipsum dolor sit<br>amet.</p>
+    <ul>
+        <ul>
+         <li>Erat tempor consetetur dolor facerno molestie kasd</li></td>
+         <li>Dolores ex ea ipsum<br>labore est.</li></td>
+         <li>Et quod sed dolores <br>adipiscing no diam.</li></td>
+
+        </ul>
+    
+
+    </ul>
+</ul>
+
+<ol>
+ <p>Lorem ipsum dolor sit<br>amet.</p>
+    <ol>
+
+     <li>Erat tempor consetetur dolor facerno molestie<br> kasd.</li>
+     <li>Dolores ex ipsum<br> labore est.</li>
+     <li>Et quod sed dolores adipiscing no diam.<br>Molestie.</li>
+
+    </ol>
+</ol>
+<!--Esercizio in tabella-->
+<br>
+<table>
+    <caption><strong>Esercizio in tabella</strong></caption>
+<thead>
+<tr>
+    <ul>
+    <th>Lorem ipsum dolor sit<br>amet.</th>
+    <th>Lorem ipsum dolor sit<br>amet.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td><li>Erat tempor consetetur dolor fecer no molestie<br>kasd.</li></td>
+    <td><li>Erat tempor consetetur dolor facer no molestie<br>kasd.</li></td>
+</tr>
+<tr>
+    <td><li>dolores ex ea ipsum<br>labore est.</li></td>
+    <td><li>Dolores ex ea ipsum<br>labore est.</li></td>
+</tr>
+<tfoot>
+<tr>
+    <td><li>Et quod sed dolores<br>adipiscing no diam.</li></td>
+    <td><li>Etquod sed dolores<br>adipiscing no diam.<br>molestie.</li></td>
+</tr>
+</tfoot>
+   </ul>
+
+</tbody>
+
+</table>
+
+
+
+
+
+
+
+</body>
+</html>
