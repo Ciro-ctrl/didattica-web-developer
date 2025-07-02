@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 3</title>
+<!--  codice Css -->
+<style>
+
+hr{ border-color:rgba(128, 128, 128, 0.249) ;
+   border-style: solid;
+}
+
+/*immagine modifica*/
+img{width:500px;
+   height:500px;
+}
+    
+/*modifica testo*/
+h1{ text-decoration-line:underline;
+    text-decoration-color:rgba(255, 68, 0, 0.832);
+   font-family:' Merriweather, Georgia, serif;';
+}
+
+span{ color:rgba(128, 128, 128, 0.742);
+
+}
+
+
+p{ font-size: 1.2em;
+   text-align:left;
+}
+
+/*collegamenti*/
+a{ text-decoration: none;
+    color: black;    
+}
+/* colore collegamento al passaggio del mouse */
+a:hover{ color:rgba(128, 128, 128, 0.742);
+}
+
+</style>
+<!-- carattere titolo h1 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- codice HTML -->
+ <!-- titolo -->
+<h1><a href="#">Sostieni Fanpage.it, fai rumore con noi</a></h1>
+ <!-- sotto titolo e collegamento -->
+<h4>
+    <span>a cura di</span>
+    <a href="#"><strong>Vincenzo Cimmino</strong></a>
+</h4>
+<hr>
+<!-- immagine --> 
+   <img src="https://staticfanpage.akamaized.net/napolifanpage/wp-content/uploads/2014/10/taxi-napoli.jpg"
+    alt="taxi napoli">
+   <h5><span>immagine di repertorio</h5></span>
+<!-- paragrafo -->
+ <p> Posteggi, scatta la protesta.Nel cuore di
+   <strong>Napoli</strong>, in uno <br>
+ dei suoi luoghi più turistici.Oggetto della contesa il <br>
+   <strong>parcheggio per i taxi in piazza del Gesù.</strong>
+L'amministrazione a <br> guida
+   <strong>Manfredi</strong>,
+dopo anni, decide di spostarli in 
+   <strong>Calata <br> Trinità Maggiore</strong>
+ma i tassisti non ci stanno. La loro <br>
+ contestazione non si è fatta attendere e
+   <strong>oggi 25 giugno</strong> <br>
+hanno deciso di manifestare all'ombra della guglia <br>
+ dell'immacolata, tra la basilica di Santa Chiara e la chiesa del 
+<br>Gesù nuovo. Per i rappresentanti sindacali scesi in strada per 
+<br> rimarcale il disaccordo, la delocalizzazione comporterebbe <br> 
+   <strong>maggior disagio agli autisti e ai clienti.</strong></p>
+</body>
+</html>
