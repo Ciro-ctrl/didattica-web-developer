@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programma tecnico per esami di passaggio Kyu e Dan</title>
+</head>
+
+<style>
+/* parte in CSS*/
+body{    background-image: url(https://abtexintl.net/wp-content/uploads/2023/01/double-judo-fabric.jpg);
+         background-size: contain;
+         background-size: 970px;
+         background-repeat: no-repeat;  
+        
+} 
+
+span{ color: rgb(42, 39, 39);
+    
+}
+
+ a   {text-decoration: none;
+       color: gray;
+
+}
+/*Testo*/
+ h1  { text-align: center;
+       font-family:cursive;
+
+
+}
+ h2   {font-family: cursive;
+      text-align: center;
+
+}
+
+ h3   {font-family: cursive;
+
+}
+
+
+
+
+</style>
+<body>
+
+<span><h1>5° Kyu(cintura gialla)</h1></span>
+     <figure>
+<span><h2>Fondatore del Judo</h2></span>
+<!--immagine Jigoro Kano-->
+<img src="https://www.fukuro.it/wp-content/uploads/2023/11/kano-jigoro.webp" alt="Jigoro jigoro-kano"  style="display: block; margin: 0 auto;">
+<span><h2>(28 Ottobre 1860- 4 Maggio 1938)</h2></span>
+ </figure>  
+<br>
+<!--Parte teorica-->
+<h3><strong>Saluto:</strong></h3><p><strong>Ritsu-rei</strong>(Saluto all'in piedi:scendere con gamba sx e poi dx)/ <strong>Za-rei</strong>(seduto)</p>
+<br>
+
+<h3><strong>Shisei-Posizione di guardia:</strong></h3>
+<ul>
+    <li>Shizen-tai(migi-shizen-tai/hidari-shizen-tai):Posizione neutrale o naturale</li>
+    <li>Jigo-tai(migi-jigo-tai/hidari-jigo-tai):Posizione di difesa,ideale per una maggiore stabilità,ma comporta una minore mobilità per cui deve essere usata solo in difesa o per preparare alcune tecniche.</li>   
+</ul>
+<!-- cadute -->
+<h3>Ukemi:</h3>
+<ul>
+    <li> <strong>Ushiro-ukemi</strong>(caduta all'indietro)</li> 
+    <p>Partendo da shizen tai Uke solleva le braccia davanti a sè fino a tenerle orrizzontali. Flette il collo in modo da fissare con lo sguardo il nodo della cintura poichè, durante la caduta, la testa non deve toccare mai il tappeto. Successivamente Uke esegue un passo all’indietro, si flette sui talloni e curvando la schiena si lascia rotolare all’indietro. Nell’istante in cui la schiena tocca a terra Uke batte con il palmo delle mani la materassina. Le mani sono ad una posizione di 30 gradi rispetto al corpo. Le gambe si sollevano ma non si flettono.</p>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_oLj_C9bokXEbNwLrJaRBDS0zI4ote7PA2uMz2VVxrn4xjkvTrLCI4WRzXEkx0wk1s_BBOmPh0Apj9c4NV6G4gK0w1yuCB_UfEplcmDzHcjbg7ab7BCEvAkTAgV4DwKWXzSq3G8t-yV4C/s1600/ushiro+ukemi.jpg" alt="Ushiro-ukemi" height="180px">
+
+    <li><strong>Mae-ukemi:</strong>(caduta in avanti)</li>
+    <p></p>
+    <img src="https://2.bp.blogspot.com/_IChGNdWYIi4/SxqSwI_1DyI/AAAAAAAAASg/XWesTKvMWJU/s1600/mae+ukemi.PNG" alt="Mae-ukemi" height="180px">
+
+    <li><strong>Mae-mawari-ukemi(migi/hidari) o Zenpo-kaiten-ukemi</strong>(caduta rotolata in avanti)</li>
+    <p>Viene utilizzata da Uke quando subisce tomoe nage e altre tecniche di sacrificio. Come yoko ukemi, si esegue a destra e sinistra.
+    Nell’esecuzione a destra, Uke parte da shizen tai e avanza con il piede destro. Flette poi le due gambe e posa la mano sinistra di piatto sul tappeto davanti al piede sinistro. Il tronco rimane inclinato in avanti e la gamba destra è più flessa della sinistra. Uke appoggia poi il bordo cubitale della mano destra sul tappeto tra la mano sinistra e il piede destro, le dita della mano dritte e rivolte all’indietro. Il braccio destro viene flesso ad arco, la schiena è ricurva e la testa ben rientrata in mezzo alle spalle. Uke si spinge in avanti distendendo le gambe e rotolando sul braccio destro. Quando il fianco sinistro tocca il tappeto Uke batte molto forte il suolo con la mano sinistra.</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPANQmmD8y_DClCDakX8rXFo_SNO_u9Uq7ZA&s"alt="zempo-kaiten-ukemi" height="180px">
+
+    <li><strong>Yoko-ukemi(migi/hidari)</strong>(caduta laterale)</li> 
+    <p>Si esegue a destra e a sinistra. Dalla posizione eretta Uke solleva il braccio destro davanti a sè e contemporaneamente avanza con il piede sinistro. Poi fa scivolare la gamba destra in avanti, si flette progressivamente sulla gamba sinistra fino a sedersi appoggiando la natica destra al tallone sinistro. A questo punto, Uke si lascia andare al suolo sul lato destro e batte contemporaneamente il tappeto con la mano e l’avambraccio destri. In questo movimento il braccio forma con il corpo un angolo di 30 gradi. Le gambe si sollevano ad angolo retto rispetto al corpo.
+Per eseguire yoko ukemi a sinistra basta invertire lo svolgimento della caduta a sinistra.</p>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfEjBOEPy9G7Vr3zhq4_QhM51ip5nj6BQnefDe5lMKapO6V9zviWf-qH3cp2Dm3cnnAkCVpF_5Td2ABgnGvUQK0pLKUI8KPmXWhWsQf728JhY_im7u5F6_WyPbqVw7h_JAqkDboI6mI2jC/s1600/yoko+ukemi.jpg" alt="Yoko-ukemi" height="180px">
+   
+</ul>
+<h3>Shintai-Spostamenti:</h3>
+<ul>
+    <li><strong>Tai-sabaki: spostamento circolare:</strong>Ampiezza variabile,ma ai fini dell' esame ricordiamo quello a 90° e quello a 180°.</li>
+    <li><strong>Shintai:</strong>spostamenti rettilinei.</li>
+    <li><strong>Ayumi-ashi:</strong> per andare avanti e indientro partendo da shizen-tai.Il piede che avanza è quello che si trova più avanti.Non può essere usato per spostarsi lateralmente.</li>
+    <li><strong>Tsugi-ashi:</strong>piede scaccia piede.Può essere eseguito in tutte le direzioni (avanti,indietro,laterale,diagonale).</li>
+    <li><strong>Tsuri-ashi:</strong></li>Passi strisicanti.Si applica a tutti i movimenti.
+</ul>
+
+<h3>Kumi Kata</h3>
+<p>La presa fondamentale si esegue partendo dalla posizione Shizen-tai(migi/hidari).Uke può effettuare la stessa di Tori(ai-Yotsu) o adottare uno la presa destra e l'altro la sinistra(Kenka-yotsu).</p>
+
+<h3>Fondamentali di Tecnica:</h3>
+<ul>
+    <li><strong>Kuzushi:(Squilibrio)</strong>Per rompere la posizione di difesa dell' avversario e spostarlo, è prima necessario esercitare una fase di squilibrio.Si può eseguire in otto direzioni principali(Happo-no-Kuzushi).</li>
+    <li><strong>Tsukuri:(Adattamento)</strong>Comprende tutti i movimenti preparatori necessari ad adottare il proprio corpo all'esecuzione della tecnica.</li>
+    <li><strong>Kake(proiezione)</strong>Ultima fase.</li>
+</ul>
+
+<h3>Nage-Waza Tecnica di proiezione:</h3>
+<figure>
+<ul>
+    <!-- tecniche cintura bianca con collegamento video -->
+        <li> <a href="https://youtu.be/c-A_nP7mKAc?si=itfiFgJGg-tU8ymj">O-soto-gari</a></li>
+        <img src="https://cmac-judo.com/_Media/o-soto-gari_med_hr.png" alt="O-soto-gari" height="180px">
+        
+        <li> <a href="https://youtu.be/0itJFhV9pDQ?si=cIRLVIm9dIJ2LXq4">O-chi-gari</a>(Grande falciata interna)</li>
+        <img src="https://i.pinimg.com/736x/1e/21/08/1e21086c8d9d04e264305c430b580ac3.jpg" alt="o-chi-gari"  height="180px">
+
+        <li> <a href="https://youtu.be/3Jb3tZvr9Ng?si=KrR_ZZXTcQNejSr2">Ko-uchi-gari</a>(Piccola falciata interna)</li>
+        <img src="https://cmac-judo.com/_Media/ko-uchi-gari_med_hr.jpeg" alt="Ko-uchi-gari" height="180px">
+
+        <li> <a href="https://youtu.be/bPKwtB4lyOQ?si=-pZFjZdRy8FjGoCP">Uki-goshi</a>(Piccola anca)</li>
+        <img src="https://cmac-judo.com/_Media/uki-goshi_med_hr.jpeg" alt="Uki-goshi" height="180px">
+
+        <li> <a href="https://youtu.be/yhu1mfy2vJ4?si=3QFFsVdBEgwv4Xok">O-goshi</a>(Grande anca)</li>
+        <img src="https://cmac-judo.com/_Media/o-goshi_med_hr.jpeg" alt="O-goshi" height="180px">
+
+        <li> <a href="https://youtu.be/FQnOlCxo4oI?si=_sEr_mV2fZVXViMX">Ippon-seoi-nage</a></li>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTPSZEdYYjI21z4pIMibn0MoIeYIeELTq0b0G6UC9MMobWwA-V2aYsES3_JS5Tia_L-IoQsN7xzueODbNDACoEaJ0C4jXs_qe7g_-13rE50qSWIAxFaCdSA4WqerDXlaXjFyyz_jv6zsl3/s1600/ippon-seoi-nage.png" 
+        alt="Ippon-seoi-nage" height="180px">
+</ul> 
+<!-- Tecniche a terra -->
+<h3>Tecniche a terra</h3>
+<ul>
+    <!--Hon-kesa-gatame immagine con link video -->
+     <li><a href="https://youtu.be/NDaQuJOFBYk?si=S17eobG4QTo0MAcV">Hon-kesa-gatame</a></li>
+    <img src="https://www.infojudo.com/wp-content/uploads/2009/12/HON-KESA-GATAME.gif"
+     alt="Hon-kesa-gatame" height="140px">
+<!-- kuzure kesa-gatame immagine con link video -->
+    <li><a href="https://youtu.be/Q2fb9jaoUFQ?si=-Mv-3sSR_h8KwkJw">Kuzure-kesa-gatame</a></li>
+    <img src="https://idata.over-blog.com/0/08/48/98/immobilisation/kuzure-kesa-gatame.gif" 
+    alt="Kuzure-kesa-gatame" height="180px">
+<!-- yoko-shiho-gatame immagine con link video-->
+    <li><a href="https://youtu.be/TT7XJVSEQxA?si=fAsQHW1spmLp32QF">Yoko-shiho-gatame</a></li>
+    <img src="https://storage.canalblog.com/68/07/452562/27794788_p.gif"
+     alt="Yoko-shiho-gatame" height="180px">
+</ul>
+</figure>
+</body>
+</html>
