@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{ background-color: #d3d3d3;
+}
+.contenitore0{ margin: 20px;
+}
+
+/*---------------------------------------- */
+  /* ARTICOLO 1 */
+.contenitore1{ background-color: white;
+               border: 2px solid;
+               border-radius:8px;
+               padding:5px; 
+               overflow: auto;
+
+}
+
+.articolo1 img{ width: 50%;
+                padding-left: 50%;
+}
+
+.articolo1 h3{ font-size: 22px;
+               line-height: 26px;
+               letter-spacing: -.01em;
+              padding-bottom:-10px;
+               font-family: Arial, sans-serif;
+               float: left;
+               
+}
+
+/* ---------------------------------------*/
+/* ARTICOLO 2 */
+.contenitore2{ background-color: rgb(255, 255, 255);
+               border:  2px solid;
+               border-radius: 8px;
+               padding: 5px;
+               margin-top:10px;
+               padding-bottom:49%;
+               overflow: auto;
+}
+.articolo2 img{ width: 210px;
+}
+
+.articoloh3{font-size: 22px;
+            line-height: 26px;
+            letter-spacing: -.01em;
+            font-family:  Arial, sans-serif;
+            float: right;
+}
+/* ----------------------------------------- */
+span{    letter-spacing:-.01em;
+         font-size:16px;
+         line-height:20px;
+         font-weight:700;
+         font-family: Arial,sans-serif;
+
+}
+
+/* articoli 3-4-5 */
+.contenitore3{ background-color: rgb(161, 227, 160);
+               padding-inline: 80px ;
+               margin-top: -50%;
+               
+/* ARTICOLO 3 */    
+}
+.articolo3{ border: 1px solid #ff4900;
+            background-color: white;
+            border-radius: 8px;
+            width:300px;
+            margin:5px;
+            padding: 14px;
+            float: left;
+}
+
+/* ARTICOLO 4 */
+.articolo4{ border: 1px solid #d3d3d3;
+            background-color: white;
+            border-radius: 8px;
+            width:300px;
+            height:80px;
+            margin:5px;
+            padding: 14px;
+            float: left;
+}
+
+/* ARTICOLO 5 */
+.articolo5{ border: 1px solid #d3d3d3; 
+            background-color: white;
+            border-radius: 8px;
+            width:300px;
+            margin:5px;
+            padding:14px;
+            float: left;
+}
+/* ----------------------------------------- */
+/*COLLEGAMENTI */
+a{   color: black;
+     text-decoration: none;
+}
+
+a:hover{  color:#d3d3d3;
+}
+
+
+</style>
+<body>
+<div class="contenitore0">
+<article class="contenitore1">
+<!--articolo 1  -->
+     <div class="articolo1">
+         <h3><a href="#">Si getta dalla finestra a Milano, <br> in casa trovato il cadavere della <br> madre, si ipotizza suicidio- <br>omicidio</a></h3>
+         <img src="https://images.nital.it/nikonschool/life/gallery/polizia-scientifica/09.jpg" alt="polizia scientifica">
+     </div>
+</article>
+
+<article class="contenitore2">
+<!--articolo 2  -->
+    <div class="articolo2">
+        <h3><a href="#"><h1>Ondata di attacchi russi su Kiev:due morti e decine di feriti. <br> Cresce la tensione tra Trump e Putin</a></h3>
+        <img  src="https://www.gedistatic.it/content/gnn/img/lastampa/2022/10/09/191829710-e7a9184f-3427-428d-984b-1075cfe55fd9.jpg" alt="palazzo">
+    </div>
+</article>
+
+<section class="contenitore3">
+ <!-- articoli 3 -->
+<div class="articolo3">
+      <span><a href="#">Il generale Battisti:"La Russia <br> vuole logorare l'Ucraina. <br> Zelensky?" Gli consiglierei <br> ritirata tattica"</a></span>
+</div>
+
+<!-- articolo 4 -->
+<div class="articolo4">
+     <span><a href="#">Morto in combattimento a Sumy <br> il 40enne italino ex Folgore <br> Thomas D'Alba</a></span>
+</div>
+
+<!-- articolo 5 -->
+<div class="articolo5">
+     <span><a href="#">Si stacca ultima linea elettrica,<br>centrale nucleare di <br> Zaporizhzhia senza corrente per <br>ore:"Grave pericolo"</a></span>
+</div>
+</section>
+</div>
+</body>
+</html>
+</body>
+</html>
