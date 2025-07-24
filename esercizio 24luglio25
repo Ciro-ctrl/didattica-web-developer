@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio5 Position</title>
+</head>
+<style>
+*{ box-sizing: border-box;}
+body  { background-color: #d3d3d3;
+}
+.contenitore1{ margin: 0px;
+              margin-left:0px ;
+              margin-right:0px ;
+              
+}
+
+
+/* articolo 1 */
+.articolo1{  margin-top: 30px;
+            height:400px;  
+            border-radius: 30px 30px 30px 30px;        
+}
+
+.testo1{ background-color: white;
+         overflow:hidden;
+         position:relative;
+         width: 50%;
+         height:400px;
+         padding:15px;
+         font-size:20px;
+         border-radius: 30px 0px 0px 30px;        
+}
+
+.img1{  width: 50%;
+        position: relative;
+        height: 400px;
+        left: 50%;
+        top: -400px;
+        background-image: url("https://www.silpcgil.it/media/original/polizia-scientifica-dota-teatro-virtuale-ricostruzione-delitti.jpg");
+        background-size: cover;
+        background-repeat:no-repeat ;
+       border-radius: 0px 30px 30px 0px;
+}
+ 
+/* articolo2 */
+.articolo2{ margin-top: 50px;
+          border-radius: 30px 30px 0px 0px;
+           height: 300px;
+}
+.testo2{  background-color: white;
+          overflow:hidden;
+          position: relative;
+          left: 50%;
+          width: 50%;
+          height: 300px;
+          padding:20px;
+          font-size:20px ;
+          border-bottom-style: dashed;
+          border-color: #d3d3d3;
+          border-top-right-radius: 30px;
+     }        
+.img2{ width:50%;
+       height: 300px;
+       background-image:url("https://www.adnkronos.com/resources/0297-1d556f063dc8-25cd9630e156-1000/format/huge/zelensky_trump_putin_combo1_afp.jpeg");
+       background-repeat: no-repeat;
+       background-size:cover;
+       top: -300px;
+       position:relative;
+        border-radius: 30px 0px 0px 0px;
+}
+/* CONTENITORE ARTICOLO 3,4,5 */
+.contenitore{ background-color:white;
+              height:300px;
+             border-radius: 0px 0px 30px 30px;
+             overflow:contain;
+}
+
+/* articolo 3 */
+.articolo3{ border: 2px solid ;
+             width:580px;
+             height:200px;
+             position:relative;
+             top:30px;
+             left:20px;
+             border: 1px solid #ff4900;
+           border-radius: 0px 0px 0px 0px;
+             
+}
+.testo3{ background-color: white;
+          overflow: hidden;
+          height: 100%;
+          font-size:200% ;
+          padding:20px;
+}
+/* articolo 4 */
+.articolo4{ border: 2px solid ;
+             width:600px;
+             height:200px;
+             position: relative;
+             top:-170px;
+             right:-620px;
+            border-radius: 0px 0px 0px 0px;
+}
+.testo4{ background-color: white;
+         overflow: hidden;
+         padding: 20px;
+         height: 100%;
+         font-size:200%;
+
+
+}
+/* atricolo 5 */
+.articolo5{  border: 2px solid ;
+             width:550px;
+             height:200px;
+             position: relative;
+             top: -370px;
+             right: -1250px;
+            border-radius: 0px 0px 0px 0px
+
+}
+.testo5{  background-color: white;
+          overflow: hidden;
+          height: 100%;
+          padding: 20px;
+          font-size: 200%;
+}
+
+/* collegamenti */
+a{   color: black;
+     text-decoration: none;
+
+}
+a:hover{color:#d3d3d3;
+
+}
+
+/* Html */
+</style>
+<body>
+<div class="contenitore1">
+
+<!--articolo 1 -->
+
+<article class="articolo1">
+
+<div class="testo1" >
+    
+    <h3><a href="#">Si getta dalla finestra a Milano, <br> in casa trovato il cadavere della <br> madre, si ipotizza suicidio- <br>omicidio</a></h3>
+</div> 
+
+ <div class="img1">
+ </div>
+
+ </article>
+
+ 
+<!--articolo 2  -->
+<article class="articolo2">
+
+     <div class="testo2">
+           <h3><a href="#"><h1>Ondata di attacchi russi su Kiev: <br> due morti e decine di feriti. <br> Cresce la tensione tra Trump e <br> Putin</a></h3>
+        </div>
+
+<div
+    class="img2">
+</div>  
+</article>
+
+
+<section class="contenitore ">
+ <!-- articoli 3 -->
+<div class="articolo3">
+<div class="testo3">
+      <span><a href="#">Il generale Battisti:"La Russia <br> vuole logorare l'Ucraina. <br> Zelensky?" Gli consiglierei <br> ritirata tattica"</a></span>
+</div>
+</div>
+<div class="articolo4">
+<!-- articolo 4 -->
+ <div class="testo4">
+     <span><a href="#">Morto in combattimento a Sumy <br> il 40enne italino ex Folgore <br> Thomas D'Alba</a></span>
+</div>
+</div>
+<div class="articolo5">
+<!-- articolo 5 -->
+<div class="testo5">
+     <span><a href="#">Si stacca ultima linea elettrica,<br>centrale nucleare di <br> Zaporizhzhia senza corrente per <br>ore:"Grave pericolo"</a></span>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
