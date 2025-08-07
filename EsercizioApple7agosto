@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{ box-sizing: border-box; }
+
+    body{ margin: 0%;
+          padding: 0%;
+    }
+    /* navigazione */
+.menu{background-color: white;
+      height: 50px;
+      width: 100%;
+      position:fixed;
+      padding:0%;
+      margin: 0%;
+      z-index: 2;
+      overflow: hidden;
+    
+
+}
+ul{ list-style-type: none;
+     padding: 15px;
+     margin: 0px; 
+
+}
+
+li{ background-color: white;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: -10px;
+    position: relative;
+    left: 30%;
+    text-align: center;
+
+    
+
+
+}
+li a{  text-decoration: none;
+       color:rgb(39, 39, 39);
+    
+
+}
+li a:hover{ color: black;
+
+}
+
+
+/* contenitore0 di BOX 0 */
+.contenitore0{ background-color:transparent;
+                   display: flex;
+                   margin: 0%;
+                   padding: 0%;
+                   height: 800px;
+
+     }
+
+    /* BOX "0" */
+
+.box0{ flex: 1;
+       background-image:url(https://cdn.prod.website-files.com/680a070c3b99253410dd3df5/680a070c3b99253410dd47be_66e007f27ebc6f8e02699ef7_Apple%252016%2520thumbnail.png);
+       overflow: contain; 
+       z-index: 1;                
+    }
+.box0 h1{position: relative;
+          bottom: -20%;
+          left: 10%;
+          font-size: 80px;
+         text-shadow:  2px 2px 4px violet;
+         color: white;
+}
+.box0 h2{position: relative;
+         bottom: -14%;
+         left: 10%;
+        color: white;
+          text-shadow:  2px 2px 4px rgb(175, 85, 231);
+}
+.box0 h3{position: relative;
+         bottom: -15%;
+         left: 9%;
+         font-size: 25px;
+         background:linear-gradient(rgb(216, 44, 228),rgb(66, 38, 205), blue);
+         -webkit-background-clip: text;
+         background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+}
+
+.box0 p{ position: relative;
+         bottom: -14%;
+         left: 11%;
+         font-size: 15px;
+         color: white;
+         text-shadow:  2px 2px 4px rgb(169, 55, 207);
+
+        
+}
+
+.blu0{  position: relative;
+         bottom: -16%;
+         left: 10%;
+         padding: 20px;
+         background-color: rgb(0, 113, 227);
+         border-style: 1px solid;
+         border-radius: 30px;
+         border: transparent;
+         color: white;
+
+}
+
+.blu0:hover{ background-color: rgb(35, 136, 237);
+
+}
+.bianco0 {position: relative;
+          bottom: -16%;
+          left: 15%;
+          padding: 20px;
+          border-style: 1px solid;
+          border-radius: 20px;
+          background-color: transparent;
+          border-color: rgb(0, 113, 227) ;
+          color: white   
+
+}
+.bianco0:hover{background-color:  rgb(0, 113, 227);
+                color: white;
+
+}
+
+    /* contenitore 1 di BOX 1 e 2 */
+.contenitore1{ background-color: transparent;
+                display: flex;
+                margin: 10px;
+                gap: 10px;
+
+
+    }
+    /* BOX"1" */
+.box1{  background-color:transparent;
+        background-image: url(https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/store-card-40-watch-s10-202409?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=QWhYaUFuRS9hTUliZ3N5RWVCV09vbGtrQjBqdmhJbWlLcCtlQTMwc01SdjkvamYzRzRvcFlnajNacmhEOC9BeDE1UUxLT2t0cW42N3FvQzVqaGhrVVlSek45NHpYUG91NnZ3YmlDQlpUYnArYWpGdS9XeFgvbS9ITnNYOEhYaG4);
+        flex: 1;
+        padding: 2px;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center; 
+        padding: 0px 0px 200px 10px; 
+        height: 500px;
+        overflow: hidden;
+    }
+.box1 h1{ text-align: center;
+          margin-top: 2px;
+
+}
+
+.box1 h3{text-align: center;
+          margin-top: -20px;
+
+}
+.box1 p{text-align: center;
+        margin-top: -15px;
+}
+
+.blu1{ position: relative;
+       left:40% ;
+       background-color: rgb(0, 113, 227);
+       border-style: 2px solid;
+       border-radius: 20px;
+       border: transparent;
+       padding: 10px;
+       color: white;
+}
+
+.bianco1{ position: relative;
+          left: 42%;
+          border-style: 1px solid;
+          border-radius: 20px;
+          padding: 10px;
+          background-color: transparent;
+          border-color: rgb(0, 113, 227) ;
+          color:  rgb(0, 113, 227);               
+}
+
+.box1 button:hover{ background-color: rgb(35, 136, 237);
+}
+
+.bianco1:hover{ background-color:  rgb(0, 113, 227);
+    color: white;
+}
+
+
+     /* BOX "2" */
+.box2{  background-color: transparent;
+        background-image: url(https://blog.marketing-espresso.com/wp-content/uploads/2023/03/maxresdefault-2.jpg.webp);
+        flex: 1;
+        background-attachment:scroll;
+        background-size: cover;
+        background-position:center; 
+        padding: 0px 0px 200px 10px; 
+        height: 500px;
+        overflow: hidden;
+
+    }
+.contenitore2{ background-color:transparent;
+              display: flex;
+              margin: 10px;
+              gap: 10px;
+
+}
+.box2 h1{ position: relative;
+          left: 40%;
+          bottom: -115%;
+          color: white;
+          text-shadow:  2px 2px 4px black;
+           
+
+}
+.box2 h3{  position: relative;
+           left: 35%;
+           bottom: -108%;
+           color: white;
+           text-shadow:  2px 2px 4px black;
+ 
+}
+.blu2{ position: relative;
+       left: 40%;
+       bottom: -104%;
+       padding: 15px;
+       margin: 5px;
+       border: transparent;
+       border-radius: 20px;
+       background-color:  rgb(0, 113, 227);
+       color: white;
+      
+}
+.bianco2{position: relative;
+         left: 40%;
+         bottom: -104%;
+         padding: 15px;
+         border-style: 1px solid;
+         border-radius: 20px;
+         background-color: transparent;
+         color:  rgb(0, 113, 227);
+         border-color: rgb(0, 113, 227) ;
+
+}
+
+.box2 button:hover{ background-color: rgb(35, 136, 237);
+}
+.bianco2:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+
+/* contenitore di BOX3 e BOX4 */
+.contenitore2{ background-color: transparent;
+                display: flex;
+                margin: 10px;
+                gap: 10px;
+}
+   /* BOX "3" */
+.box3{ background-color: transparent;
+       flex: 1;
+       background-image:url(https://framerusercontent.com/assets/PwqiWL4UfTp3ubOjH49zMG6EI.jpg);
+       background-position: center;
+       background-attachment: scroll;
+       height: 500px;
+       overflow:auto;
+}
+
+.box3 h1{ text-align: center;
+          font-size:2em;
+}
+
+.box3 p{ text-align: center;
+         margin-top: -12px;
+         font-family: serif;
+}
+
+.box3 button{ position: relative;
+              left:43%;
+              border-radius: 20px;
+              border-style: 2px solid;
+              padding: 10px;
+              background-color: rgb(0, 113, 227);
+              border: transparent;
+              color: white;
+}
+
+.box3 button:hover{ background-color: rgb(35, 136, 237);
+}
+
+   /* BOX "4" */
+.box4{ background-color: transparent;
+       flex: 1;
+       background-image: url(https://i.pinimg.com/736x/be/bf/33/bebf332d112a9eb8ec5186de03108e77.jpg);
+       background-position: center;
+       background-size: cover;
+       background-attachment: scroll;
+       height: 500px;
+       overflow: hidden;
+}
+
+.box4 h1{ position: relative;
+           left: 43%;
+           bottom: -25%;
+           color:white;
+           text-shadow:  2px 2px 4px black;
+
+
+
+}
+.box4 p{  position: relative;
+          left: 40%;
+          bottom: -25%;
+          color:white;
+          text-shadow:  2px 2px 4px black;
+}
+
+.blu4{ position: relative;
+       left: 40%;
+       bottom: -28%;
+       padding: 10px;
+       margin: 5px;
+       border-style: 1px solid;
+       border: transparent;
+       border-radius: 20px;
+       background-color: rgb(0, 113, 227) ;
+       color: white;
+}
+.bianco4{ position: relative;
+         left: 40%;
+         bottom: -28%;
+         padding: 10px;
+         border-style: 1px solid;
+         border-radius: 20px;
+         border-color:  rgb(0, 113, 227);
+         color:  rgb(0, 113, 227);
+         background-color: transparent;
+
+}
+
+.blu4:hover{ background-color: rgb(35, 136, 237);
+} 
+
+.bianco4:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+
+    </style>
+</head>
+<body>
+<nav class="menu">
+<ul>
+    <li>
+        <!-- svg apple -->
+       <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+               <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+           </svg>
+        </a>
+    </li>
+       <li><a href="#">Store</a></li>
+          <li><a href="#">Mac</a></li>
+              <li><a href="#">iPad</a></li>
+                  <li><a href="#">iPhone</a></li>
+                      <li><a href="#">Watch</a> </li>
+                          <li><a href="#">AirPods</a></li>
+                     <li><a href="#">TV & Casa</a></li>
+                 <li><a href="#">Intrattenimento</a></li>
+              <li><a href="#">Accessori</a></li>
+          <li><a href="#">Supporti</a></li>
+ <!-- svg lente ricerca -->
+      <li>
+         <a href="#">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/> 
+            </svg>
+         </a> 
+     </li>
+     <!-- svg carrello -->
+    <li>
+       <a href="#">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+               <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+           </svg>
+        </a> 
+    </li>  
+</ul>
+</nav>
+<!-- contenitore 0 di BOX0 -->
+<div class="contenitore0">
+    <!-- BOX 0 -->
+    <div class="box0">
+        <h1> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+               <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+           </svg>iPhone
+        </h1>
+          <h2>Introducing the iPhone 16 family.</h2>
+             <a href="#"><button class="blu0">Find out more</button></a>
+               <a href="#"><button class="bianco0">buy iPhone</button></a>
+           <h3>Designed for Apple intelligence.</h3>
+        <p>Apple intelliggence in now available <sup>2</sup></p>
+    </div>
+</div>
+    <!-- contenitore grande 1 -->
+<div class="contenitore1">
+    <!-- BOX 1 -->
+    <div class="box1">
+        <h1>
+            <svg class="apple" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                     <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            </svg>WATCH
+        </h1>
+            <h3>series 10</h3>
+                <strong><p>Thinstant classic.</p></strong>
+                <a href="#"><button class="blu1">Learn more</button></a>
+          <a href="#"><button class="bianco1">buy</button></a> 
+    </div>
+    <!-- BOX 2 -->
+    <div class="box2">
+      <h1>AirPods Pro2</h1>
+         <h3>Now with a Hearing aid feature <sup>3</sup>.</h3>
+             <a href="#"><button class="blu2">Learn more</button></a>
+        <a href="#"><button class="bianco2">buy</button></a>
+    </div>
+</div> 
+<!-- contenitre grande 2 -->
+<div class="contenitore2">
+  <!-- BOX3 -->
+      <div class="box3">
+          <h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+              <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                 <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                    </svg>Trade In</h1>
+                <p><strong>Get $160-$600 in credit when you <br> trade in iPhone 12 or higher <sup>4</sup>.</strong></p>
+             <a href="#"><button>Get you estimate</button></a>
+       </div> 
+  <!-- BOX4 -->
+<div class="box4"> 
+      <h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+         <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+             </svg>Card</h1>
+                <strong><p>Get up to 3% Daily Cash back <br> with every purchase</p></strong>
+           <a href="#"><button class="blu4">Learn more</button></a>
+         <a href="#"><button class="bianco4">Apply now</button></a>
+     </div>
+</div>
+</body>
+</html>
