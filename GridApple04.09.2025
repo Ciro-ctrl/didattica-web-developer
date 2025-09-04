@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag.Apple Grid</title>
+    <!-- CSS -->
+    <style>
+*{ box-sizing: border-box;
+}
+
+body{margin:0%;
+     padding:0%;
+     background-color:whitesmoke;
+
+}
+
+/* MENU */
+menu{ background-color:black;
+      position: fixed;
+      padding:0%;
+      margin:0%;
+      width:100%;
+      height:50px;
+      z-index: 1;
+      overflow:hidden;
+}
+
+ul{ list-style-type: none;
+
+}
+li{ display: inline-block;
+    position: relative;
+    left:20%;
+    margin-top:10px;
+    text-align: center;   
+}
+
+li a{ text-decoration: none;
+      color: gray;
+      padding:20px;      
+}
+
+li a:hover{ color: white;
+
+}
+
+/* contenitore pubblicità 1*/
+.contenitore0{ display: flex;
+               margin:0px;
+               padding: 0%;       
+}
+
+/* Pubblicità 1 */
+.pubbl1{ background-color: black;
+         background-image: url(https://cdn.dribbble.com/userupload/21420846/file/original-12ee4e5a9ae76ed998dc9da7d2d20173.gif);
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position:center;
+         flex: 1;
+         width: 100%;
+         height:600px;
+         margin-right: 15px;
+         overflow: hidden;       
+ }
+
+.titolo1{ color:white;
+          position: relative;
+          left: 38%;
+          bottom: -55%;
+          font-size: 40px;         
+}
+
+.sottotitolo1{color: white;
+            position: relative;
+            left: 40%;
+            bottom: -48%;
+            font-size: medium;
+}
+
+
+.bottone1{ position: relative;
+           left: 45%;
+           bottom: -46%;
+           padding: 15px;
+           border-style: solid 1px;
+           border-radius: 30px;
+           font-size: medium;           
+}
+
+.bottone1:hover{ background-color:  grey;
+                color: white;
+}
+
+/* contenitore pubblicità 2 */
+.contenitore1{ display: flex;
+                margin: 0%;
+               padding: 0%;
+
+}
+/* Pubblicità 2 */
+.pubbl2{ background-image: url(https://www.apple.com/newsroom/images/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/article/Apple-iPhone-16-Apple-Intelligence-240909_big.jpg.large.jpg);
+         background-color:rgba(250,250,250,255);
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: right;
+         flex: 1;
+         width: 100%;
+         height:600px;
+         margin-right:15px;
+         margin-top: 15px;
+         border-style: solid 1px;
+         overflow: hidden;
+}
+
+.titolo2{ position: relative;
+          left:20%;
+          bottom:-20%;
+          font-size: 40px;
+          
+
+}
+.sottotitolo2{ position: relative;
+               left: 15%;
+               bottom:-12%;
+               font-size: 15px;
+
+}
+.minifrase2{  position: relative;
+              left: 19%;
+              bottom:-35%;
+              font-size: 12px;
+
+}
+.bottoneblu2{position: relative;
+              bottom: -20%;
+              left: 15%;
+              padding: 30px;
+              border-style: solid 1px;
+             border-radius: 30px;
+             font-size: medium;
+             background-color: rgb(0, 113, 227) ;
+             color: white;
+             border: transparent;
+}
+
+.bottoneblu2:hover{ background-color: rgb(35, 136, 237);
+} 
+
+.bottonebianco2{position: relative;
+                bottom: -20%;
+                left:19%;
+                 padding: 30px;
+                border-style: solid 1px;
+                border-radius: 30px;
+               font-size: medium;
+                border-color:  rgb(0, 113, 227);
+               color:  rgb(0, 113, 227);
+               background-color: transparent;
+}
+
+.bottonebianco2:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+
+/* contenitore pubblicità da 3 a 6 */
+.contenitore2{ display: grid;
+               grid-template:50% 50% / 50% 50%;
+               gap: 15px;
+               margin-top:15px;  
+               margin-right:50px;
+               margin-left: 15px;
+                                     
+}
+                                     
+/* Pubblicità 3 */
+.pubbl3{background-color:transparent;
+        background-image: url(https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-og-202503?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1739216814915);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        height: 400px;
+        overflow: hidden;   
+}
+.titolo3{ color: white;
+          position: relative;
+          font-size: medium;
+          left:40% ;
+          bottom:-25% ;
+          text-shadow:  2px 2px 4px black;
+}
+.sottotitolo3{ color: white;
+              position: relative;
+              left:40% ;
+              bottom:-20% ;
+              text-shadow:  2px 2px 4px black;
+}
+.frase3{ color: white;
+         position: relative;
+         left:35% ;
+         bottom:-18% ;
+         text-shadow:  2px 2px 4px black;
+}
+.bottoneblu3{ position: relative;
+              bottom:-18%;
+              left: 34%;
+              padding: 15px;
+              border-style: solid 1px;
+              border-radius: 30px;
+              font-size: medium;
+              background-color: rgb(0, 113, 227) ;
+             color: white;
+             border: transparent;
+}
+
+.bottoneblu3:hover{ background-color: rgb(35, 136, 237);
+} 
+
+.bottonebianco3{position: relative;
+                bottom:-18%;
+                left: 35%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                  border-color:  rgb(0, 113, 227);
+                 color:  rgb(0, 113, 227);
+                 background-color: transparent;
+}
+
+.bottonebianco3:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+
+
+.frasecolorata{ position: relative;
+                left:35% ;
+                bottom:-40% ;
+               
+}
+
+/* Pubblicità 4 */
+.pubbl4{background-color: blueviolet;
+        background-image: url(https://www.theapplelounge.com/wp-content/uploads/2023/12/Apple-Watch-Series-10.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        overflow: hidden;   
+}
+
+.titolo4{color: white;
+         text-shadow:  2px 2px 4px black;
+         font-size: large;
+         position: relative;
+         left: 10%;
+}
+.sottotitolo4{color: white;
+              text-shadow:  2px 2px 4px black;
+              position: relative;
+              left: 13%;
+              top: -5%;
+
+}
+.frase4{color: white;
+        text-shadow:  2px 2px 4px black;
+        position: relative;
+        left: 2%;
+        top: -8%;
+
+}
+.bottoneblu4{ position: relative;
+             bottom:10%;
+             left: 3%;
+             padding: 15px;
+             border-style: solid 1px;
+            border-radius: 30px;
+            font-size: medium;
+            background-color: rgb(0, 113, 227) ;
+             color: white;
+            border: transparent;
+}
+
+.bottoneblu4:hover{ background-color: rgb(35, 136, 237);
+} 
+
+.bottonebianco4{position: relative;
+                bottom:10%;
+                left: 5%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                border-color:  rgb(0, 113, 227);
+                color:  rgb(0, 113, 227);
+                background-color: transparent;
+}
+
+.bottonebianco4:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+
+/* Pubblicità 5 */
+.pubbl5{background-color: whitesmoke;
+        background-image: url(https://www.ceotech.it/wp-content/uploads/2024/12/iPad-Pro-M5-ritardi-nella-produzione-uscita-per-il-2025.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        overflow: hidden;   
+}
+.titolo5{color: white;
+         position: relative;
+         left:10%;
+         font-size: large;
+           
+        
+
+}
+.sottotitolo5{ color: white;
+               position: relative;
+               left:4%;
+               top:-5% ;
+              
+             
+             
+}
+.frase5{ color: white;
+        position: relative;
+        left:4% ;
+        top: -8%;
+         
+       
+
+}
+.bottoneblu5{position: relative;
+                top:-10% ;
+                left:4%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                background-color: rgb(0, 113, 227) ;
+                color: white;
+                border: transparent;
+}
+
+.bottoneblu5:hover{ background-color: rgb(35, 136, 237);
+} 
+
+.bottonebianco5{position: relative;
+                top: -10%;
+                left: 5%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                border-color:  rgb(0, 113, 227);
+                color:  rgb(0, 113, 227);
+                background-color: transparent;
+
+}
+.bottonebianco5:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+.frasecolorata5{ color: white;
+                 position: relative;
+                 bottom:-32% ;
+                 left:40% ;
+                  text-shadow:  2px 2px 4px black;
+
+}
+
+
+/* Pubblicità 6 */
+.pubbl6{background-color:black;
+        background-image: url(https://static.ipaditalia.com/wp-content/uploads/2022/03/iPad-air-m1.jpg.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 400px;
+        overflow: hidden;   
+}
+.titolo6{color: white;
+         position: relative;
+         left: 45%;
+         font-size: 20px;
+
+}
+.sottotitolo6{color: white;
+              position: relative;
+              left: 36%;
+              top: -3%;
+              font-size:10px;
+
+}
+.bottoneblu6{position: relative;
+                bottom:-50%;
+                left: 35%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                background-color: rgb(0, 113, 227) ;
+                color: white;
+                border: transparent;
+}
+
+.bottoneblu6:hover{ background-color: rgb(35, 136, 237);
+} 
+
+.bottonebianco6{position: relative;
+                bottom:-50%;
+                left:38%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                border-color:  rgb(0, 113, 227);
+                 color:  rgb(0, 113, 227);
+                background-color: transparent;
+
+}
+.bottonebianco6:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+.frasecolorata6{color: white;
+                position: relative;
+                bottom:-49% ;
+                left:38% ;
+
+}
+/* contenitore di Pubblicità 7 e 8 */
+.contenitore3{display: grid;
+              grid-template:50% 50% / 50% 50%;
+              gap: 15px;
+              margin-top:30px;  
+              margin-right:50px; 
+              margin-left: 15px;
+             
+              
+          
+}
+/* Pubblicità 7 */
+.pubbl7{background-color: coral;
+        background-image: url(https://www.apple.com/v/airpods-4/d/images/overview/welcome/hero__1z1ep1te3eq2_xlarge.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        overflow: hidden;   
+        
+}
+.titolo7{color: white;
+         text-shadow:  2px 2px 4px black;
+         font-size: large;
+         position: relative;
+         left:41% ;
+         bottom:-45% ;
+
+}
+.sottotitolo7{color: white;
+              text-shadow:  2px 2px 4px black;
+              position: relative;
+              left:40% ;
+              bottom:-40% ;
+
+}
+.frasetitolo7{color: white;
+              text-shadow:  2px 2px 4px black;
+              position: relative;
+              left:28% ;
+              bottom:-35% ;
+
+}
+.bottoneblu7{position: relative;
+                bottom:-35%;
+                left:35%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                background-color: rgb(0, 113, 227) ;
+                color: white;
+                border: transparent;
+}
+
+.bottoneblu7:hover{ background-color: rgb(35, 136, 237);
+} 
+
+.bottonebianco7{position: relative;
+                bottom:-35%;
+                left:38%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                border-color:  rgb(0, 113, 227);
+                color:  rgb(0, 113, 227);
+                background-color: transparent;
+}
+.bottonebianco7:hover{ background-color:  rgb(0, 113, 227);
+                color: white;
+}
+
+/* Pubblicità 8 */
+.pubbl8{background-color: darkcyan;
+background-image: url(https://www.tuttotech.net/wp-content/uploads/2020/10/Apple-Trade-In-iPhone-12.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        overflow: hidden;   
+       
+}
+.titolo8{font-size:20px;
+         position: relative;
+         left:40% ;
+         bottom:-30% ;
+
+}
+.sottotitolo8{position: relative;
+              left:34% ;
+              bottom:-30% ;
+
+}
+.bottoneblu8{position: relative;
+                bottom:-35%;
+                left:40%;
+                padding: 15px;
+                border-style: solid 1px;
+                border-radius: 30px;
+                font-size: medium;
+                background-color: rgb(0, 113, 227) ;
+               color: white;
+               border: transparent;
+}
+.bottoneblu8:hover{ background-color: rgb(35, 136, 237);
+} 
+</style>
+</head>
+<body>
+
+<!-- menu -->
+ <menu>
+<ul>
+    <!-- svg apple -->
+    <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+        </svg></a>
+    </li>
+ <li><a href="#">Store</a></li>
+    <li><a href="#">Mac</a></li>
+        <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                    <li><a href="#">AirPods</a></li>
+                        <li><a href="#">TV & Casa</a></li>
+                    <li><a href="#">Intrattenimento</a></li>
+                <li><a href="#">Accessori</a></li>
+            <li><a href="#">Supporto</a></li>
+        <!-- svg ricerca lente -->
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/> 
+            </svg></a>
+        </li>
+        <!-- svg carrello -->
+    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+           <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+           </svg></a>
+    </li>
+</ul>
+ </menu>
+
+<!-- "section di 2 Pubblicità" -->
+ <section class="contenitore0">
+ <!-- Pubblicità 1 -->
+  <div class="pubbl1">
+ <!-- video logo apple -->
+     <div class="titolo1">
+         <h1>EVENTO APPLE</h1>
+     </div>
+         <div class="sottotitolo1">
+            <h2>Seguilo online il 9 settembre alle 19.</h2>
+         </div>
+     <a href="#"><button class="bottone1">Aggiungi al calendario</button></a>       
+ </div>
+ </section>
+ <!-- Pubblicità 2 -->
+  <section class="contenitore1">
+<div class="pubbl2">
+   <div class="titolo2">
+       <h1>iPhone</h1>  
+   </div>
+        <div class="sottotitolo2">
+            <h2>Ti presentiamo la famiglia iPhone 16</h2>
+        </div>
+    <a href="#"><button class="bottoneblu2">Scopri di più</button></a>
+       <a href="#"><button class="bottonebianco2">Aquista</button></a>
+<div class="minifrase2">
+    <h3>Proggettati per Apple intelligence</h3>
+</div>
+</div>
+</section>
+
+<!-- "section" 4 ubblicità in tabella-->
+<section class="contenitore2">
+<!-- Pubblicità 3 -->
+<div class="pubbl3">
+   <div class="titolo3">
+       <h1>McBook Air</h1>
+   </div>
+        <div class="sottotitolo3">
+           <h3>Colore celeste.</h3>
+        </div>
+             <div class="frase3">
+                 <h3>E prestazioni celestiali, con M4.</h3>
+            </div>
+                 <a href="#"><button class="bottoneblu3">Scopri di più</button></a>
+            <a href="#"><button class="bottonebianco3">Aquista</button></a>
+   <div class="frasecolorata">
+       <p>Proggettato da Apple intelligence.</p>   
+   </div>       
+</div>
+
+ <!-- pubblicità 4 -->
+<div class="pubbl4">
+<!-- Svg apple -->
+    <div class="titolo4">
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+        </svg>Watch</h1>
+    </div>
+        <div class="sottotitolo4">
+             <h4>Series 10.</h4>
+        </div>
+            <div class="frase4">
+                <h2>Più schermo. Più sottile. Più stile.</h2>
+            </div>
+                  <a href="#"><button class="bottoneblu4">Scopri di più</button></a>
+        <a href="#"><button class="bottonebianco4">Aquista</button></a>     
+</div>
+
+<!--Pubblicità 5 -->
+<div class="pubbl5">
+   <div class="titolo5">
+       <h1>iPad Pro</h1>
+   </div>
+        <div class="sottotitolo5">
+           <h2>impossibilmente sottile.</h2>
+        </div>
+            <div class="frase5">
+                <h2>Incredibilmente potente.</h2>
+            </div>
+             <a href="#"><button class="bottoneblu5">Scopri di più</button></a>
+              <a href="#"><button class="bottonebianco5">Aquista</button></a>
+        <div class="frasecolorata5 ">
+            <p>Proggettato da Apple intelligence.</p>
+        </div>
+</div>
+
+<!-- Pubblicità 6 -->
+<div class="pubbl6">
+   <div class="titolo6">
+      <h1>iPad air</h1>
+   </div>
+     <div class="sottotitolo6">
+        <h2>Adesso con i superpoteri del chip M3</h2>
+     </div>
+        <a href="#"><button class="bottoneblu6">Scopri di più</button></a>
+            <a href="#"><button class="bottonebianco6">Aquista</button></a>
+        <div class="frasecolorata6">
+            <p>Proggettato da Apple intelligence.</p>
+        </div>
+</div>
+</section>
+
+<!--contenitore pubblicità 7 e 8 -->
+<section class="contenitore3">
+    <!--Pubblicità 7 -->
+<div class="pubbl7">
+   <div class="titolo7">
+      <h1>AirPods 4</h1>
+  </div>
+       <div class="sottotitolo7">
+           <h2>Super. Sonici.</h2>
+      </div>
+          <div class="frasetitolo7">
+              <h2>Anche con cancellazione attiva del rumore <sup>2</sup></h2>
+          </div>
+           <a href="#"><button class="bottoneblu7">Scopri di più</button></a>
+    <a href="#"><button class="bottonebianco7">Aquista</button></a>
+</div>
+
+<!-- Pubblicità 8 -->
+<div class="pubbl8">
+        <div class="titolo8 ">
+             <h1> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+        </svg>Trade In</h1>
+        </div>
+    <div class="sottotitolo8">
+          <h3>Ottieni un credito da 150 a 700 <br> dando in premuta il tuo iPhone 12 <br> o successivo. <sup>3</sup> </h3>
+    </div>
+        <a href="#"><button class="bottoneblu8">Guarda quanto vale</button></a>
+</div>
+</section>
+
+</body>
+</html>
