@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{box-sizing: border-box;}
+body{background-image: url(https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png);
+    background-repeat:repeat;
+    background-size:30% ;
+    margin: 0%;
+    padding:0%;
+    width: 100%;
+    height:100%;
+}
+/* Contenitore BOX1 e 2 */
+.contenitore{
+              height: 100%;
+              background-color: white;
+              overflow: auto;  
+              margin-right:100px; 
+              margin-left:100px;         
+}
+/* NOVITà */
+.novità{ color: rgba(128, 128, 128, 0.886);
+         font-size:20px;
+         font-family: sans-serif;
+         padding: 20px;
+         overflow: auto;
+         
+}
+
+
+/* BOX 1 */
+.box1{ display: grid;  
+       grid-template-columns: auto auto; 
+       overflow: auto;
+       gap:10px;
+       margin:30px;
+}
+/* Articolo1 -----------------------------------*/
+.c1{border:transparent;
+    width: 100%;
+    height: 100%;
+    overflow: auto;  
+}
+
+.img1{width:100%;
+      height:50%;
+      border-radius:10px;
+}
+
+.data1{padding:10px;
+      color: #ee6b2f;
+
+}
+
+.tipologia1{ margin-top:-30px;
+             padding:10px;
+             color:#919191;
+}
+
+.titolo1{ margin-top: -18px;
+          padding:10px;
+}
+
+.frase1{  padding: 10px;
+          margin-top:-10px;
+          font-size: medium;
+          color: #919191;
+}
+
+/* Articolo 2 ---------------------------------------*/
+.c2{border:transparent;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.img2{width: 100%;
+      height:50%;
+      border-radius:10px;
+}
+
+.data2{padding:10px;
+      color: #ee6b2f;
+}
+
+.tipologia2{margin-top:-30px;
+            padding:10px;
+            color:#919191;
+}
+
+.titolo2{ margin-top: -18px;
+          padding:10px;
+}
+
+.frase2{ padding: 10px;
+         margin-top:-10px;
+         font-size: medium;
+         color: #919191;
+
+}
+
+/* LINE DIVISORIA HR ----------------------- */
+.lineadivisoria{ margin-top:50px;
+
+}
+
+
+/* BOX 2 --------------------------------------*/
+.box2{ display: grid;
+       grid-template-columns: auto auto auto;
+       overflow: auto;
+       row-gap:50px;
+       margin-left:20px;
+       margin-bottom:50px;
+       margin-top:30px;
+}
+/* Articolo 3-------------------------------- */
+.c3{ border:transparent;
+     width: 90%;
+     height:100%;
+      overflow: auto;
+}
+
+.img3{ width:100%;
+       height:50%;
+       border-radius: 10px;
+}
+
+.data3{padding:10px;
+      color: #ee6b2f;
+}
+
+.tipologia3{margin-top:-30px;
+            padding:10px;
+            color:#919191;
+}
+
+.titolo3{margin-top: -18px;
+          padding:10px;
+}
+
+.frase3{ padding: 10px;
+         margin-top:-10px;
+         font-size: medium;
+         color: #919191;
+
+}
+
+/* Articolo 4 ----------------------------------*/
+.c4{ border:transparent;
+     width: 90%;
+     height:100%;
+      overflow: auto;
+}
+
+.img4{ width:100%;
+    height:50%;
+       border-radius:10px;
+}
+
+.data4{padding:10px;
+      color: #ee6b2f;
+}
+
+.tipologia4{margin-top:-30px;
+            padding:10px;
+            color:#919191;
+}
+
+.titolo4{margin-top: -18px;
+          padding:10px;
+
+}
+
+.frase4{ padding: 10px;
+         margin-top:-10px;
+         font-size: medium;
+         color: #919191;
+}
+/* Articolo 5 ----------------------------------*/
+.c5{ border: transparent;
+     width: 90%;
+     height:100%;
+     overflow: auto;
+}
+
+.img5{width:100%;
+      height:50%;
+     border-radius:10px;
+}
+
+.data5{padding:10px;
+      color: #ee6b2f;
+}
+
+.tipologia5{margin-top:-30px;
+            padding:10px;
+            color:#919191;
+}
+
+.titolo5{margin-top: -18px;
+          padding:10px;
+}
+
+.frase5{padding:10px;
+         margin-top:-20px;
+         font-size:medium;
+         color: #919191;
+}
+
+/* Articolo 6 ------------------------------------*/
+.c6{ border: transparent;
+     width: 90%;
+     height:100%;
+      overflow: auto;
+}
+
+.img6{width:100%;
+    height:50%;
+    border-radius: 10px;
+}
+
+.data6{padding:10px;
+      color: #ee6b2f;
+}
+
+.tipologia6{margin-top:-30px;
+            padding:10px;
+            color:#919191;
+}
+
+.titolo6{margin-top: -18px;
+          padding:10px;
+}
+
+.frase6{padding:10px;
+         margin-top:-20px;
+         font-size:medium;
+         color: #919191;
+}
+/* Articolo 7-----------------------------------------*/
+.c7{ border:transparent;
+     width: 90%;
+     height:100%;
+      overflow: auto;
+}
+
+.img7{width:100%;
+      height:50%;
+      border-radius: 10px;
+}
+
+.data7{padding:10px;
+      color: #ee6b2f;
+}
+
+.tipologia7{margin-top:-30px;
+            padding:10px;
+            color:#919191;
+}
+
+.titolo7{margin-top: -18px;
+          padding:10px;
+}
+
+.frase7{padding:10px;
+         margin-top:-20px;
+         font-size:medium;
+         color: #919191;
+}
+/* Articolo 8-------------------------------------- */
+.c8{ border:transparent;
+     width: 90%;
+     height:100%;
+      overflow: auto;
+}
+
+.img8{width:100%;
+      height: 50%;
+      border-radius: 10px;
+}
+
+.data8{padding:10px;
+      color: #ee6b2f;
+}
+
+.tipologia8{margin-top:-30px;
+            padding:10px;
+            color:#919191;
+}
+
+.titolo8{margin-top: -18px;
+          padding:10px;
+}
+
+.frase8{padding:10px;
+         margin-top:-20px;
+         font-size:medium;
+         color: #919191;
+}
+
+
+/* altri schermi --------------------------------*/
+@media screen and (max-width: 600px){
+
+.contenitore{
+             padding:0%;
+             margin:0%;
+            
+
+}
+
+
+.box1{display:grid;
+      grid-template-columns: auto;
+      grid-template-rows:auto;
+      gap:6px;
+      width:100%;
+
+ }
+
+.box2{display:grid;
+      grid-template-columns: auto;
+      grid-template-rows:auto;
+      gap:6px;
+      width:100%;
+
+}
+}
+
+    
+
+</style>
+</head>
+<body>
+<div class="contenitore">
+
+ <div class="novità">
+ <h1>Novità Pokèmon</h1>
+ </div>
+
+<!--box articolo 1 e 2 -->
+<div class="box1">
+<!-- 1 -->
+ <div class="c1">
+<img class="img1" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/pokemon-go/2025/09/09/pokemon-go-169.png" alt="">
+<h3 class="data1">09 settembre 2025</h3>
+<h3 class="tipologia1">Videogiochi e app</h3>
+<h2 class="titolo1">Divertiti coi Festeggiamenti per la concierge  <br> Pokèmon in pokèmon Go</h2>
+<p class="frase1">Questa celebrazione del resort Pokèmon ti farà sentire ai tropici.</p>
+</div>
+
+<!-- 2 -->
+<div class="c2">
+ <img class="img2" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/attend-events/championship/2026-laic/2026-laic-169.png" alt="">
+<h3 class="data2">09 settembre 2025</h3>
+<h3 class="tipologia2">Eventi Play! Pokèmon</h3>
+<h2 class="titolo2">Non perderti le ultime novità sui campionati internazionali Latinoamericani 2026</h2>
+<p class="frase2">Dettagli sui premi,sulla registrazione e sui prodotti inclusi nel kit <br> di benvenuto di questa stagione sono ora disponibili sul sito web <br> dei campionati.</p>
+</div>
+</ul>
+</div>
+
+<div class="lineadivisoria">
+<hr>
+</div>
+
+<!-- box2 di articolo da 3 a 8 -->
+<div class="box2">
+
+<!-- 3 -->
+ <div class="c3"><!-- netflix -->
+<img class="img3" src="https://www.pokemon.com/static-assets/content-assets/cms2-it-it/img/watch-pokemon-tv/_tiles/concierge/2025/announce/pokemon-concierge-169-it.png" alt="">
+<h3 class="data3">04 settembre 2025</h3>
+<h3 class="tipologia3">Animazione</h3>
+<h2 class="titolo3">Guarda i nuovi episodi di La concierge Pokèmon su Netflix</h2>
+<p class="frase3">Aria di vacanze e un paradiso tropicale ti<br>  aspettano al resort Pokèmon</p>
+</div>
+
+<!-- 4 -->
+ <div class="c4"><!-- suicune-ex carte -->
+<img class="img4" src="https://www.pokemon.com/static-assets/content-assets/cms2-it-it/img/video-games/_tiles/tcg-pocket/strategy/secluded-springs/suicune-ex/pokemon-tcg-pocket-169-it.png" alt="">
+<h3 class="data4">04 settembre 2025</h3>
+<h3 class="tipologia4">Videogiochi e app</h3>
+<h2 class="titolo4">GCC Pokèmon Pocket: Strategia per il mazzo Suicune-ex</h2>
+<p class="frase4">Suicune-ex scende in campo e ci sguazza a meraviglia</p>
+</div>
+
+<!-- 5 -->
+<div class="c5"><!-- carte zoroark -->
+<img class="img5" src="https://www.pokemon.com/static-assets/content-assets/cms2-it-it/img/video-games/_tiles/tcg-pocket/2025/09/03/pokemon-tcg-pocket-169-it.png" alt="">
+<h3 class="data5">03 settembre 2025</h3>
+<h3 class="tipologia5">Videogiochi e app</h3>
+<h2 class="titolo5">Evento Bonus Zoroark nel Gioco di Carte Collezionabili Pokèmon Pocket</h2>
+<p class="frase5"> Vinci delle lotte con CPU per ottenere carte <br> promo speciali con illustrazioni tutte nuove,tra <br> cui una fantastica carta promozionale di <br> Zoroark.</p>
+</div>
+
+<!-- 6 -->
+ <div class="c6"><!-- infografia -->
+<img class="img6" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/misc/_tiles/2025/middle-evolution/middle-evolution-169.png" alt="">
+<h3 class="data6">02 settembre 2025</h3>
+<h3 class="tipologia6">Generale</h3>
+<h2 class="titolo6">Lasciati stupire con l'infografica sui <br> Pokèmon a metà della loro linea <br> evolutiva</h2>
+<p class="frase6">Prenditi un momento per apprezzare il <br> potenziale dei pokèmon che si sono evoluti una <br> volta ma non due.</p>
+</div>
+
+<!-- 7 -->
+ <div class="c7"><!-- pokèmon switch -->
+ <img class="img7" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/_tiles/pokemon-scarlet-violet/events/2025/08/31/02/scarlet-violet-169.png" alt="">
+<h3 class="data7">31 agosto 2025</h3>
+<h3 class="tipologia7">Videogiochi e app</h3>
+<h2 class="titolo7">Trova i Pokèmon di tipo Fuoco <br> Charcadet,Vulpix e Numel nelle <br> comparse massicce</h2>
+<p class="frase7">Questi calorosi Pokèmon faranno la loro <br> comparsa in grandi gruppi nel corso di questo <br> evento.</p>
+</div>
+
+<!-- 8 -->
+ <div class="c8"><!-- espansione pokèmon -->
+ <img class="img8" src="https://www.pokemon.com/static-assets/content-assets/cms2-it-it/img/video-games/_tiles/tcg-pocket/2025/08/22/pokemon-tcg-pocket-169-it.png" alt="">
+<h3 class="data8">28 agosto 2025</h3>
+<h3 class="tipologia8">Videogiochi e app</h3>
+<h2 class="titolo8">È arrivata la nuova espansione del <br> GCC Pokèmon Pocket Sorgenti <br> Recondite</h2>
+<p class="frase8">Trova Pokèmon della regione di Johto come <br> Raikou, Entei e suicune e preparati per l'arrivo di  vari eventi.</p>
+</div>
+<!-- fine contenitore -->
+ </div>
+
+<!-- fine box1 -->
+</div>
+
+
+
+  
+</body>
+</html>
