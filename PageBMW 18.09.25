@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Boostrap JAVA SCript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <!-- Fine boostrap -->
+<style>
+*{box-sizing: border-box;}
+
+body{margin:0%;
+     padding:0%;
+}
+/* BOX 1 ----------------------------------------------*/
+.contenitore1{ background-image: url(https://bmw.scene7.com/is/image/BMW/na5_technical-data-stage?wid=2560&hei=2560);
+              background-size:cover;
+              background-position:center;
+              background-repeat: no-repeat;
+              height:800px;
+}
+
+.cont-text1{color: white;
+            font-family:monospace;
+}
+
+.newbmw{ position: absolute;
+         top:280px;
+         left:110px;
+}
+
+/* SErie iX3 */
+.ix3{position: absolute;
+     top:300px;
+     left:80px;
+}
+
+.bmw{
+    font-size:22px ;
+}
+
+.serie{font-size:250px;
+}
+
+/* testo della bmw ix3 */
+.text1{position: absolute;
+       top:580px;
+       left:110px;
+}
+
+.newera{ font-size:22px;
+}
+
+#buttonblue{ position:absolute ;
+             top:620px;
+             left:110px;
+             padding:15px;
+
+}
+
+.buttonwhite{ position: absolute;
+              top: 620px;
+              left:350px;
+              height:55px;
+              width:14%;
+              border-radius:10px;
+              border-color:rgb(226, 220, 220) ;
+              background-color: transparent;
+              border-style: solid;            
+}
+
+.buttonwhite a{ color:white;
+                text-decoration: none;
+                font-size:17px;
+}
+
+.modbuttonwhite :hover{ border-color:white;
+}
+
+/* button help position fixed-------------------------------- */
+.buttonhelp{ position: fixed;
+             left:90%;
+             top: 700px;
+             z-index:2;           
+}
+
+.bottonehelp2{ border-radius:50%;
+               border-color: white;
+               width: 40px;
+               height: 40px;
+               padding:80%;                         
+}
+
+.svghelp{ color: black;
+          position:absolute;
+          left:16px;
+          top:20px;
+}
+
+.svghelp:hover{color:#1c69d4;
+}
+/* BOX 2-------------------------------------------------------- */
+.box2{font-family: monospace;
+       background-color: transparent;
+       display: grid;
+       grid-template-columns: auto auto auto auto;
+       gap:10px;
+       margin-top:70px;
+       margin-bottom:80px;
+       margin:20px;
+    
+}
+
+.titolobox2{ text-align: center;
+             margin-top:60px;
+             font-family: monospace;
+}
+/* section1--------------------------------- */
+.opzione1{ width:100%;
+           height:100%;
+
+}
+.svg1{text-align: center;
+}
+.art1{ text-align: center;
+        margin-top:30px;
+
+}
+.bottone1{ display: block;
+	      margin: 0 auto;
+	      width: 100px;
+}
+/* section2 ---------------------------*/
+.opzione2{ width:100%;
+           height:100%;
+
+}
+.svg2{ text-align: center;
+
+}
+.art2{ text-align: center;
+       margin-top:30px;
+
+}
+.bottone2{display: block;
+	      margin: 0 auto;
+	      width: 100px;
+}
+/* section3---------------------------- */
+.opzione3{width:100%;
+         height:100%;
+}
+.svg3{text-align: center;
+
+}
+.art3{ text-align: center;
+        margin-top:30px;
+}
+
+.bottone3{display: block;
+	      margin: 0 auto;
+	      width: 100px;	       
+}
+/* section4 --------------------------*/
+.opzione4{width:100%;
+         height:100%;
+         z-index:1;
+
+}
+.svg4{text-align: center;
+
+}
+.art4{ text-align: center;
+       margin-top:30px;
+
+}
+.bottone4{display: block;
+	      margin: 0 auto;
+	      width: 100px;
+}
+
+/* BOX3-------------------------- */
+.contenitore3{background-image: url("https://cdnwp.dealerk.com/eed49ed7/uploads/sites/519/2025/08/progetto-senza-titolo-2025-08-05t095946-535.png");
+              background-size:cover;
+              background-position:center;
+              background-repeat: no-repeat;
+              height:800px;
+              margin-top:60px;
+
+}
+.cont-text3{font-family: monospace;
+            color: white;
+            position: relative;
+}
+
+.auto{position: absolute;
+       top:465px;
+       left: 50px;
+
+}
+.autoscelta{font-size:40px;
+           
+
+}
+.trxt3{font-size: 20px;
+
+}
+
+.x1{position: absolute;
+    top:540px;
+    left:50px;
+}
+
+.bottonebox3{position: absolute;
+            top:1920px;
+            left:50px;
+        
+}
+
+#bottonebox4{width:600px;
+
+}
+/* immatricolazione */
+.infoimmatricolazione{color: grey;
+                      font-size:13px;
+                      text-align: center;
+                      display: inline;
+                      width:100%;
+}
+
+.paragrafo1{ margin-top:20px;
+             margin-bottom:20px;
+
+}
+/* BOX4 */
+.contenitore4{background-image: url("https://live.staticflickr.com/65535/48437864212_bf31330d72_o.jpg");
+              background-size:cover;
+              background-position:center;
+              background-repeat: no-repeat;
+              height:800px;
+              margin-top:60px;
+              position: relative;
+}
+
+.cont-text4{color: white;
+             font-family: monospace;
+             position: relative;
+}
+
+.bmwserie1{ position: absolute;
+            left:80px;
+             top:400px;
+}
+
+.h1serie1{ font-size:50px;
+        
+}
+
+.text4{position: absolute;
+        left:80px;
+        top:470px;
+
+}
+
+.buttonbluebox4{position: absolute;
+                 left:80px;
+                 top:600px; 
+                
+
+}
+
+#bottonebox4{width:500px;
+}
+/* BOX 5  */
+.box5{display: flex;
+      margin-bottom:500px;
+      
+}
+.contenitore5{flex: 1;
+              margin-top:70px;
+
+}
+.cont-img{width:100%;
+          margin-left:50px;
+
+}
+.imgbox5{ height:800%;
+
+}
+
+/* BOX 6 */
+.contenitore6{flex: 1;
+              margin:70px;
+}
+.cont-text6{ text-align:left;
+             font-family: monospace;
+             margin-left:100px ;             
+}
+
+
+.bottonebox6{
+
+}
+
+/* parte monitor riduzione */
+@media screen and (max-width: 600px) {   
+
+}  
+    
+
+</style>
+</head>
+<body>
+   <!--menu di navigazione  in Boostrap -->
+<nav id="menu" class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+ <!-- logo BMW -->
+    <ul class="navbar-nav">
+      <li><a class="navbar-brand" href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/1200px-BMW.svg.png" alt="Bootstrap" width="50" height="50">
+           </a>
+      </li>
+  <!-- fine logo -->
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Tutti i modelli e il Configuratore</a>
+      </li>
+<!-- Auto elettriche -->
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All Eletric
+           </a>
+<ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Auto elettriche BMW</a></li>
+        <li><a class="dropdown-item" href="#">Auto elettriche BMW usate</a></li>
+          <li><a class="dropdown-item" href="#">Vantaggi delle vetture elettriche BMW. Panoramica</a></li>
+      <li><a class="dropdown-item" href="#">I costi dell'auto elettrica</a></li>
+</ul>
+<!-- Shop online -->
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop Online
+          </a>
+<ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Vetture Disponibili</a></li>
+        <li><a class="dropdown-item" href="#">Vetture Disponibili usate</a></li>
+            <li><a class="dropdown-item" href="#">Offerte Disponibili</a></li>
+                <li><a class="dropdown-item" href="#">Connect Drive Store</a></li>
+            <li><a class="dropdown-item" href="#">BMW LifeStyle Connection</a></li>
+        <li><a class="dropdown-item" href="#">BMW Premium Selection</a></li>
+    <li><a class="dropdown-item" href="#">Offerte</a></li>
+</ul>
+<!-- More BMW -->
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               More BMW
+         </a>
+<ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">BMW Recycling</a></li>
+        <li><a class="dropdown-item" href="#">Marcature Pneumatici</a></li>
+           <li><a class="dropdown-item" href="#">House of BMW</a></li>
+      <li><a class="dropdown-item" href="#">Accessori originali BMW</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- fine menu navigazione --> 
+<!-- box 1 -->
+<div class="contenitore1">
+         <div class="cont-text1">
+            <div class="newbmw">
+                <h2 class="bmw">T H E &nbsp; N E W &nbsp; B M W </h2>
+            </div>
+                 <div class="ix3">
+                    <h1 class="serie">iX3</h1>
+                 </div>
+            <div class="text1">
+                <h2 class="newera">The first of a new era.</h2>
+            </div>
+        </div>
+<!-- bottone 1 con boostrap -->
+<button id="buttonblue" type="button" class="btn btn-primary">Configurazioni e prezzi</button>
+ <!-- bottone 2 con bootsrap -->
+         <div class="modbuttonwhite">
+             <button class="buttonwhite"><a href="#">Scopri di più</a></button>
+         </div>
+     </div>
+ 
+
+ <!-- bottone contatto position:Fixed -->
+<div class="buttonhelp">
+    <button class="bottonehelp2">
+           <a href="#"> 
+             <svg class="svghelp" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-right" viewBox="0 0 16 16">
+                <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+             </svg>
+          </a>
+    </button>
+</div>
+
+ <!-- box 2 -->
+     <div class="titolobox2">
+         <h1>Trova una nuova BMW.</h1>
+     </div>
+<div class="box2">
+<!-- section 1 -->
+<section class="opzione1">
+         <div class="svg1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-car-front" viewBox="0 0 16 16">
+                    <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"/>
+                    <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"/>
+              </svg>
+         </div> 
+               <div class="art1">
+                    <h3>Trova una nuova BMW.</h3>
+               </div>
+         <div class="bottone1"> 
+            <button type="button" class="btn btn-outline-secondary btn-lg">Vetture Disponibili</button>
+        </div>
+</section>
+<!-- section 2 -->
+ <section class="opzione2">
+         <div class="svg2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+                   <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+              </svg>
+         </div>
+               <div class="art2">
+                   <h3>Prenota un Test Drive.</h3>
+               </div>
+           <div class="bottone2">
+               <button type="button" class="btn btn-outline-secondary btn-lg">Test Drive</button>
+           </div>
+ </section>
+ <!-- section 3 -->
+ <section class="opzione3">
+          <div class="svg3">
+               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-car-front" viewBox="0 0 16 16">
+                    <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"/>
+                    <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"/>
+              </svg>
+          </div>
+                <div class="art3">
+                    <h3>Configura la tua BMW.</h3>
+                </div>
+            <div class="bottone3">
+                 <button type="button" class="btn btn-outline-secondary btn-lg">Configura & Prezzi.</button>
+            </div>
+ </section>
+  <!-- section 4 -->
+ <section class="opzione4">
+         <div class="svg4">
+             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+             </svg>
+         </div>
+                <div class="art4">
+                    <h3>Scopri le Offerte.</h3>
+                </div>
+           <div class="bottone4">
+               <button type="button" class="btn btn-outline-secondary btn-lg">Offerte.</button>
+           </div>
+ </section>
+</div>
+
+ <!-- box 3 -->
+    <div class="contenitore3">
+        <div class="cont-text3">
+            <div class="auto">
+                   <h1 class="autoscelta">Guida subito la tua scelta.</h1>
+                </div>
+             <div class="text3">
+                    <h4 class="x1">Scopri la famiglia BMW X1,con il programma <br>
+                         di manutenzione Plus incluso in omaggio,per <br>
+                  veicoli immatricolati entro il 31 ottobre.</h4>
+             </div>
+        </div>
+         <div class="bottonebox3">
+             <button id="bottonebox4" type="button" class="btn btn-primary btn-lg">Scopri di più</button>
+        </div>
+    </div>
+</div>
+
+<!-- info -->
+<div class="infoimmatricolazione">
+    <p class="paragrafo1">Gli anni,i chilometri inclusi e gli interventi di manutenzione BMW Service incluse+ possono variare a seconda della motorizzazione prescelta e decorrono dalla data della prima immatricolazione.Offerta
+    valida per i veicoli immatricolati entro il 31/10/2025 .Maggiori informazioni su bmw.it</p>
+ </div>
+
+<!-- box 4 -->
+<div class="contenitore4">
+         <div class="cont-text4">
+              <div class="bmwserie1">
+                 <h1 class="h1serie1">BMW Serie 1.</h1>
+              </div>
+                    <div class="text4">
+                         <h3 class="h3serie1">Scopri BMW Serie 1 con <br>
+                        con il pacchetto M Sport in omaggio.</h3>
+                    </div>
+              </div>
+        <div class="buttonbluebox4">
+            <button id="bottonebox4" type="button" class="btn btn-primary btn-lg">Configuratore & Prezzo</button>
+        </div>
+</div>
+
+
+<!-- inforamazioni -->
+<div class="infoimmatricolazione">
+    <p>Gli anni,i chilometri inclusi e gli interventi di manutenzione BMW Service incluse+ possono variare a seconda della motorizzazione prescelta e decorrono dalla data della prima immatricolazione.Offert <br>
+    valida per i veicoli immatricolati entro il 31/10/2025 .Maggiori informazioni su bmw.it</p>
+ </div>
+
+<!-- box 5  -->
+ <div class="box5">
+    <div class="contenitore5">
+        <div class="cont-img">
+           <img class="imgbox5" src="https://www.bowkermotorgroup.co.uk/wp-content/uploads/2024/08/BMW-Connected-Drive-1024x683.jpg" alt="">
+        </div>
+</div>
+      <div class="contenitore6">
+             <div class="cont-text6">
+              <div class="connectdrive">
+                  <h1>BMW Connect Drive Upgrades. <br>Su misura per te.</h1>
+              </div>
+        <div class="text6">
+            <h4>Ti piacerebbe aggiornare o personalizzare con pochi e semplici click la tua <br>
+             auto anche dopo l'aquisto? Nello Store BMW ConnectDrive puoi farlo. <br>
+             Fai il log con il tuo BMW ID e scopri quali upgrade digitali puoi scegliare. <br>
+              <br>
+              <br>
+            Lo store è disponiblie anche nella MyBMW App</h4>
+        </div>
+        </div>
+        <br>
+        <div>
+            <button class="bottonecont-6"><a href="#">Vai allo Store</a></button>
+        </div>
+   </div>
+</div>
+</div>
+</body>
+</html>
