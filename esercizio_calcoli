@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercizio</title>
+    <style>
+    *{box-sizing: border-box;}  
+    
+body{margin: 0%;
+    padding:0%;  
+    background-image: url(https://img1.wallspic.com/crops/7/7/2/0/6/160277/160277-forme_geometrique-affiche-tessellation-conception-graphique-1436x3113.png); 
+    background-repeat: no-repeat; 
+    background-size:100% 500%;
+}
+
+p{padding: 8px;
+  font-family: monospace;
+  font-size:larger;
+  letter-spacing:2px;
+}
+    </style>
+</head>
+<body>
+    <div class="box" style="display:grid; grid-template-columns: auto auto auto;gap:30px; margin-top:50px; margin:20px;">
+<!--________rettangolo_________ -->
+<!-- Perimetro? Area?
+    P = 2 *(b + h) / A = b * h-->
+<div class="contenitore1" style="background-color: greenyellow;border-radius:10px;">
+<h1 style="padding:8px;font-family:monospace;">Calcola il perimetro e l' area di un rettangolo.</h1>
+
+<p>L'area di un rettangolo è di cm: <span id="area"></span></p>
+<p>Il perimetro di un rettangolo è di cm: <span id="perimetro"></span></p>
+</div>
+
+
+<!--___________ cerchio__________ -->
+<!-- Perimetro? Area? 
+       C=2πr / A = πr2-->
+<div class="contenitore2" style="background-color: yellow;border-radius:10px;">
+<h1 style="padding:8px;font-family: monospace;">Calcola il perimetro e l' area di un cerchio.</h1>
+
+<p>Il perimetro di un rettangolo è di cm: <span id="perimetro2"></span></p>
+<p>L'area di un rettangolo è di cm: <span id="area2"></span></p>
+
+</div>
+
+
+<!-- __________triangolo equilatero_________ -->
+<!-- Perimetro? Area?
+P = 3 * l / A = (lato² * √3) / 4 -->
+<div class="contenitore3" style="background-color:aqua;border-radius:10px;">
+<h1 style="padding: 8px;font-family: monospace;">Calcola il perimetro e l' area di un triangolo.</h1>
+
+<p>L'area di un rettangolo è di cm: <span id="area3"></span></p>
+<p>Il perimetro di un rettangolo è di cm: <span id="perimetro3"></span></p>
+</div>
+</div><!-- fine box1 -->
+
+<div class="box2" style="display:grid; grid-template-columns: auto auto;gap:30px; margin-top:50px; margin:20px;">
+<div class="contenitore4" style="background-color: blueviolet;border-radius: 10px;">
+
+
+    <!-- ___________Quadrato____________ -->
+     <!-- Perimetro? Area?
+      A = lato * lato  / P = 4 * lato -->
+<h1 style="padding:8px;font-family: monospace;">Calcola il perimetro e l'aria di un quadrato.</h1>
+<p>L'area di un quadrato è di cm: <span id="area4"></span></p>
+<p>Il perimetro di un quadrato è di cm: <span id="perimetro4"></span></p>
+</div>
+
+<div class="contenitore5" style="background-color: mediumslateblue;border-radius: 10px;">
+    
+<!-- ____________Trapezio_____________ -->
+ <!-- altezza?  mediana?
+     h=a+b2A / m=2a+b​​-->
+<h1 style="padding:8px; font-family: monospace;">Calcola l'altezza e la mediana di un trapezio.</h1>
+<p>L'altezza di un trapezio è di cm: <span id="altezza"></span></p>
+<p>La mediana di un trapezio è di cm: <span id="mediana"></span></p>
+</div>
+
+
+</div><!-- Fine box2 -->
+<!-- jvscript -->
+<script>
+//____________________RETTANGOLO__________________________//
+var base = prompt("inserisci la base del rettangolo","");
+var altezza = prompt("inserisci l'altezza del rettangolo","")
+
+var arearettangolo = base * altezza;
+var perimetrorettangolo = 2 * (base + altezza);
+
+
+//Output rettangolo
+area.innerHTML = arearettangolo;
+perimetro.innerHTML = perimetrorettangolo;
+
+
+//________________________CERCHIO____________________//
+var raggio = prompt("inserisci il raggio del cerchio","")
+
+var perimetrocerchio =  C = 2 * Math.PI * raggio;
+var areacerchio = Math.PI * raggio * 2;
+
+//Output cerchio
+perimetro2.innerHTML = perimetrocerchio.toFixed(2);
+area2.innerHTML =areacerchio.toFixed(2);
+
+
+//_____________TRIANGOLO EQUILATERO____________//
+var lato = prompt("inserisci il lato del triangolo equilatero","")
+
+var areatriangoloEQ = (Math.pow(lato, 2) * Math.sqrt(3)) / 4;
+var perimetrotriangoloEQ = 3 * lato
+
+//Output triangoloEQ
+area3.innerHTML = areatriangoloEQ;
+perimetro3.innerHTML = perimetrotriangoloEQ;
+
+/* //_________________QUADRATO__________________//
+var lato = prompt("inserisci il lato del quadrato","")
+
+var areaquadrato = lato * lato;
+var perimetroquadrato = 4 * lato;
+
+//Output quadrato
+area4.innerHTML = areaquadrato;
+perimetro4.innerHTML = perimetroquadrato;
+
+//_____________TRAPEZIO______________________//
+var area = prompt("inserisci l'area del trapezio","")
+var base = prompt("inserisci la base del trapezio","")
+
+var altezzatrapezio = (2 * A) / (a + b)
+var medianatrapezio = 2 * (a + b)
+
+//Output trapezio
+altezza.innerHTML = altezzatrapezio;
+mediana.innerHTML = medianatrapezio; */
+</script>
+
+</body>
+</html>
