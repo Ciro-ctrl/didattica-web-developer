@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPhone</title>
+<style>
+*{box-sizing: border-box;}
+
+body{margin: 0%;
+    padding: 0%;
+    background-color: #f5f5f7;
+}
+
+/* Navbar contenitore */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial;
+  padding:10px;
+  font-size: smaller;
+}
+
+/* Links all'interno della  navbar */
+.navbar a {
+  float: left;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* dropdown contenitore */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  color: grey;
+  font-size:10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color:black;
+  height: 520px;
+}
+
+/* Style links inside the columns */
+.column a {
+  float: none;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+  color: gray;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Contenitore dell'articolo 1 */
+.contenitore1{background-image: url(https://wallpaperbat.com/img/7988497-black-apple-wallpaper-apple-logo.jpg);
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position: center;
+              padding:80px;
+}
+
+#button1{border-radius:20px;
+         padding:10px;
+         width:200px;
+         color:white;
+         background-color:transparent;
+         border-color:white;
+         text-transform: uppercase;
+         position: relative;
+         left:100px;
+         bottom:-30px;
+}
+
+#button1:hover{background-color: #0071e3;
+}
+
+/* contenitore dell'articolo 2 */
+.contenitore2{background-image: url(https://www.telefonino.net/app/uploads/2020/06/Iphone-12.jpg);
+              background-size: contain;
+              background-color: black;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:right;
+}
+
+/* contenitore dell'articol 3 */
+.contenitore3{background-image: url(https://www.bhphotovideo.com/explora/sites/default/files/1-Apple-AirPods-Pro-3_0.png);
+              background-size: contain;
+              background-color: black;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:left;
+}
+
+/* contenitore dell'articolo 4 */
+.contenitore4{background-image: url(https://mms.businesswire.com/media/20220308005926/en/1383186/5/Apple-iPad-Air-hero-color-lineup-220308.jpg?download=1);
+              background-size: contain;
+              background-color: #fafafa;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:center;
+}
+
+/* contenitore dell'articolo 5 */
+.contenitore5{background-image: url(https://www.apple.com/v/apple-watch-series-11/a/images/overview/product-viewer/product_landing_endframe__eaytrp6zz6c2_large.jpg);
+              background-size: cover;
+              background-color: #f5f5f7;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:center;
+}
+
+/* contenitore dell'articolo 6 */
+.contenitore6{background-image: url(https://pc-gaming.it/wp-content/uploads/2024/10/apple-macbook-pro.jpg);
+              background-size: contain;
+              background-color: #f9f9f9;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:top;
+
+}
+/* contenitore dell' articolo 7 */
+.contenitore7{background-image:url(https://multiplayer.net-cdn.it/thumbs/images/2025/01/13/ipad-11_jpg_1600x900_crop_q85.jpg) ;
+              background-color: #f9f9f9;
+              background-size: contain;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:bottom;
+}
+
+/* contenitore dell'articolo 8 */
+.contenitore8{background-image:url(https://macmagazine.com.br/wp-content/uploads/2025/09/Apple-Watch-SE-3-hero-250909.jpg) ;
+              background-color: #f9f9f9;
+              background-size: contain;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:center;
+}
+/* contenitore dell'articolo 9 */
+.contenitore9{background-image: url(https://icon.co.cr/cdn/shop/files/Trade_in_Banner.jpg?v=1729177677&width=3840);
+              background-size: contain;
+              background-color: white;
+              width:100%;
+              height:600px;
+              background-repeat: no-repeat;
+              background-position:center;
+}
+
+/* menu veloce */
+#buttonmenu{border-radius: 50%;
+            padding:10px;
+            border-color: transparent;
+            margin:20px;
+}
+
+#buttonmenu:hover{background-color:black;
+
+}
+
+/* Slideshow container (Carousel) film e serie TV*/
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:black;
+}
+
+/* Caption text !!!!! Non usato*/
+.text {
+  padding: 8px 12px;
+  position: absolute;
+  left: 40px;
+  bottom:50px;
+  width: 100%;
+
+}
+
+#buttonTv{border-radius:20px;
+          padding:20px;
+          width:20%;
+          background-color: #0071e3;
+          letter-spacing:1px;
+          font-weight: 800;
+          text-align:center;
+          border-color: transparent;
+          color: white;
+          font-size:15px;
+}
+
+/* Number text (1/3 etc) !!!!!! Non usato */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators !!!! Puntini  */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+    </svg>
+  </a>
+  <div class="dropdown">
+    <button class="dropbtn">Store
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>Aquista</h3>
+          <a href="#">Aquista i tuoi regali</a>
+          <a href="#">Mac</a>
+          <a href="#">iPad</a>
+          <a href="#">iPhone</a>
+          <a href="#">Apple Watch</a>
+          <a href="#">AirPods</a>
+          <a href="#">Accessori</a>
+        </div>
+        <div class="column">
+          <h3>Link rapidi</h3>
+          <a href="#">Trova uno store</a>
+          <a href="#">Stato degli ordini</a>
+          <a href="#">Apple Trade in</a>
+          <a href="#">Finanziamenti</a>
+          <a href="#">Setup personale</a>
+        </div>
+        <div class="column">
+          <h3>Aquista sugli store dedicati</h3>
+          <a href="#">Ricondizionati certificati</a>
+          <a href="#">Istruzione</a>
+          <a href="#">Business</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- secondo dropdown -->
+ <div class="dropdown">
+    <button class="dropbtn">Mac
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>Mac</h3>
+          <a href="#">Scopri la linea Mac</a>
+          <a href="#">MacBook Air</a>
+          <a href="#">MacBook Pro</a>
+          <a href="#">iMac</a>
+          <a href="#">Mac mini</a>
+          <a href="#">Mac Studio</a>
+          <a href="#">Mac Pro</a>
+          <a href="#">Display</a>
+        </div>
+        <div class="column">
+          <h3>Aquista Mac</h3>
+          <a href="#">Aquista Mac</a>
+          <a href="#">Accessori Mac</a>
+          <a href="#">Apple Trade in</a>
+        </div>
+        <div class="column">
+          <h3>Altro per Mac</h3>
+          <a href="#">Supporto Mac</a>
+          <a href="#">AppleCare</a>
+          <a href="#">macOs Tahoe</a>
+          <a href="#">Apple Intelligence</a>
+          <a href="#">App made in Apple</a>
+          <a href="#">Con iPhone dà il meglio</a>
+          <a href="#">iCloud+</a>
+          <a href="#">Mac al lavoro</a>
+          <a href="#">Istruzione</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- terzo dropdown -->
+ <div class="dropdown">
+    <button class="dropbtn">iPad
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>iPad</h3>
+          <a href="#">Scopri la linea iPad</a>
+          <a href="#">iPad Air</a>
+          <a href="#">iPad Pro</a>
+          <a href="#">iPad</a>
+          <a href="#">iPad mini</a>
+          <a href="#">iPad mini</a>
+          <a href="#">Apple Pencil</a>
+          <a href="#">Tastiere</a>
+        </div>
+        <div class="column">
+          <h3>aquista iPad</h3>
+          <a href="#">Aquista iPad</a>
+          <a href="#">Accessori iPad</a>
+          <a href="#">Apple Trade in</a>
+        </div>
+        <div class="column">
+          <h3>Altro per iPad</h3>
+          <a href="#">Supporto iPad</a>
+          <a href="#">AppleCare</a>
+          <a href="#">iPadOS 26</a>
+          <a href="#">Apple Intelligence</a>
+          <a href="#">Per le famiglie</a>
+          <a href="#">App mede in Apple</a>
+          <a href="#">iCloud+</a>
+          <a href="#">Istruzione</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- quarto dropdown -->
+<div class="dropdown">
+    <button class="dropbtn">iPhone
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>iPhone</h3>
+          <a href="#">Scopri la linea iPhone</a>
+          <a href="#">iPhone 17 Pro</a>
+          <a href="#">iPhone Air</a>
+          <a href="#">iPhone 17</a>
+          <a href="#">iPhone 16</a>
+          <a href="#">iPhone 16e</a>
+        </div>
+        <div class="column">
+          <h3>aquista iPhone</h3>
+          <a href="#">Aquista iPhone</a>
+          <a href="#">Accessori iPhone</a>
+          <a href="#">Apple Trade in</a>
+          <a href="#">Finanziamenti</a>
+        </div>
+        <div class="column">
+          <h3>Altro per iPhone</h3>
+          <a href="#">Supporto iPhone</a>
+          <a href="#">AppleCare</a>
+          <a href="#">iOS 26</a>
+          <a href="#">Apple Intelligence</a>
+          <a href="#">Per le famiglie</a>
+          <a href="#">App mede in Apple</a>
+          <a href="#">iPhone e la tua privacy</a>
+          <a href="#">Con Mac dà il meglio</a>
+          <a href="#">iCloud+</a>
+          <a href="#">Apple pay</a>
+          <a href="#">Siri</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- quinto dropdown -->
+<div class="dropdown">
+    <button class="dropbtn">Watch
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>Apple Watch</h3>
+          <a href="#">Scopri la linea Apple Watch</a>
+          <a href="#">Apple Watch Series 11</a>
+          <a href="#">Apple Watch SE 3</a>
+          <a href="#">Apple Watch Ultra 3</a>
+          <a href="#">Apple Watch Nike</a>
+          <a href="#">Apple Watch Hermès</a>
+        </div>
+        <div class="column">
+          <h3>aquista Apple Watch</h3>
+          <a href="#">Aquista Apple Watch</a>
+          <a href="#">Cinturini Apple Watch</a>
+          <a href="#">Accessori Apple Watch/a>
+          <a href="#">Apple Trade in </a>
+        </div>
+        <div class="column">
+          <h3>Altro per Apple Watch</h3>
+          <a href="#">Supporto Apple Watch</a>
+          <a href="#">AppleCare</a>
+          <a href="#">WatchOS 26</a>
+          <a href="#">App mede in Apple</a>
+          <a href="#">AppleFitness+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Quinto dropdown -->
+<div class="dropdown">
+    <button class="dropbtn">AirPods
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>AirPods</h3>
+          <a href="#">Scopri la linea AirPods</a>
+          <a href="#">AirPods 4</a>
+          <a href="#">AirPods Pro 3</a>
+          <a href="#">AirPods Max</a>
+        </div>
+        <div class="column">
+          <h3>aquista AirPods</h3>
+          <a href="#">Aquista Apple Watch</a>
+          <a href="#">Accessori AirPods</a>
+        </div>
+        <div class="column">
+          <h3>Altro per AirPods</h3>
+          <a href="#">Supporto AirPods</a>
+          <a href="#">AppleCare</a>
+          <a href="#">Apple Music</a>
+          <a href="#">AppleFitness+</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- sesto dropdown -->
+<div class="dropdown">
+    <button class="dropbtn">TV & Casa
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>Scopri i prodotti TV & Casa</h3>
+          <a href="#">Apple TV 4K</a>
+          <a href="#">HomePod</a>
+          <a href="#">HomePod mini</a>
+        </div>
+        <div class="column">
+          <h3>aquista TV & Casa</h3>
+          <a href="#">Aquista Apple TV 4K</a>
+          <a href="#">Aquista HomePod</a>
+          <a href="#">Aquista HomePod mini</a>
+          <a href="#">Aquista Siri Remote</a>
+          <a href="#">Accessori TV & Casa</a>
+        </div>
+        <div class="column">
+          <h3>Altro per TV & Casa</h3>
+          <a href="#">Supporto Apple TV</a>
+          <a href="#">AppleCare per Apple TV</a>
+          <a href="#">AppleCare per HomePod</a>
+          <a href="#">App Apple TV</a>
+          <a href="#">Apple TV</a>
+          <a href="#">App Casa</a>
+          <a href="#">Apple Music</a>
+          <a href="#">siri</a>
+          <a href="#">AirPlay</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Settimo dropdown -->
+ <div class="dropdown">
+    <button class="dropbtn">Intrattenimento
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>Intrattenimento</h3>
+          <a href="#">Scopri i servizi per l'intrattenimento</a>
+          <a href="#">Apple One</a>
+          <a href="#">Apple TV</a>
+          <a href="#">Apple Music</a>
+          <a href="#">Apple Arcade</a>
+          <a href="#">Apple Fitness+</a>
+          <a href="#">Apple Podcasts</a>
+          <a href="#">Apple Books</a>
+          <a href="#">App Store</a>
+        </div>
+        <div class="column">
+          <h3>Supporto</h3>
+          <a href="#">Supporto Apple TV</a>
+          <a href="#">Supporto Apple Music</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ottavo dropdown -->
+<div class="dropdown">
+    <button class="dropbtn">Accessori
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>Accessori per</h3>
+          <a href="#">Tutti gli Accessori</a>
+          <a href="#">Mac</a>
+          <a href="#">iPad</a>
+          <a href="#">iPhone</a>
+          <a href="#">Apple Watch</a>
+          <a href="#">AirPods</a>
+          <a href="#">TV & Casa</a>
+        </div>
+        <div class="column">
+          <h3>Linea di Accessori</h3>
+          <a href="#">Creati da Apple</a>
+          <a href="#">Beats</a>
+          <a href="#">AirTag</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- nono dropdown -->
+ <div class="dropdown">
+    <button class="dropbtn">Supporto
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>Supporto</h3>
+          <a href="#">Mac</a>
+          <a href="#">iPad</a>
+          <a href="#">iPhone</a>
+          <a href="#">Apple Watch</a>
+          <a href="#">AirPods</a>
+          <a href="#">TV</a>
+          <a href="#">Musica</a>
+        </div>
+        <div class="column">
+          <h3>Ricevi assistenza</h3>
+          <a href="#">Community</a>
+          <a href="#">Verifica la copertura</a>
+          <a href="#">Genius Bar</a>
+          <a href="#">Riparazioni</a>
+        </div>
+        <div class="column">
+          <h3>Argomenti utili</h3>
+          <a href="#">Get AppleCare</a>
+          <a href="#">Apple account e password</a>
+          <a href="#">Fatturazioni e abbonamenti</a>
+          <a href="#">Accessibilità</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<a href="#">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+  </svg>
+</a>
+<a href="#">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+  </svg>
+</a>
+</div>
+
+<!-- Donazione -->
+<div class="donazione" style="background-color: rgb(61, 61, 61);height: 50px;width: 100%; margin-top:-18px ;">
+    <p style="text-align:center;letter-spacing:1px;color: white;text-transform: uppercase;position: relative;top:13px;font-size: smaller;"> 
+      Per ogni acquisto che effettui da Apple pagando con Apple Pay, doniamo $ 5 al Global Fund per sostenere la lotta contro l’AIDS. Fino al 7/12.1 
+      <a style="text-decoration:none;color: blue;text-transform: uppercase;" href="#">Aquista > </a>
+    </p>
+</div>
+<!-- box articoli 3 -->
+<div style="display: grid;grid-template-columns: auto;gap:10px;" class="box1">
+<!-- primo articolo -->
+<div class="contenitore1">                                                   <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <a style="text-decoration: none;" href="#">        
+       <h1 style="color: whitesmoke;">Approffitta del Black Friday.</h1>
+       <h2 style="color: whitesmoke;">Lo aspettano da un anno. È il momento giusto.</h2>
+       <button id="button1">Aquista</button>
+    </a>
+</div>
+<!-- secondo articolo -->
+ <div class="contenitore2">
+     <a style="text-decoration: none;" href="#">
+       <h1 style="color: white;">iPhone</h1>
+       <h2 style="color: white;">Vieni a conoscere la nuova generazione iPhone.</h2>
+       <button id="button2">Scopri di più</button>
+       <button id="button2" >Aquista iPhone</button>
+     </a>
+ </div>
+ <!-- terzo articolo -->
+<div class="contenitore3">
+      <a style="text-decoration: none;" href="#">
+       <h1>AirPods Pro 3</h1>
+       <h2>Gli auricolari con la maggiore cancellazione attiva del rumore al mondo.</h2>
+       <button>Scopri di più</button>
+       <button>Aquista</button>
+      </a>
+</div>
+<!-- fine box 3 articoli -->
+</div>
+<br>
+<!-- menu veloce -->
+<nav style="text-align: center; width:100%;">
+<div class="button_nav">
+  <a href="#"><button id="buttonmenu"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 26 26"><path fill="#828282" d="M8 0a3 3 0 0 0-3 3v20a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H8zm4.5 1h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm-5 2h12a.5.5 0 0 1 .5.5v17a.5.5 0 0 1-.5.5h-12a.5.5 0 0 1-.5-.5v-17a.5.5 0 0 1 .5-.5zm7.438 5c-.413.027-.875.282-1.157.625c-.256.31-.489.769-.406 1.219c.451.012.918-.246 1.188-.594c.252-.324.444-.782.374-1.25zm-2.782 1.781c-.59 0-1.227.386-1.625 1c-.562.862-.47 2.459.438 3.844c.326.494.776 1.057 1.344 1.063c.503.005.627-.309 1.312-.313c.685-.004.807.318 1.313.313c.566-.006 1.05-.6 1.374-1.094a5.59 5.59 0 0 0 .5-.938c-1.315-.497-1.55-2.382-.25-3.094c-.396-.494-.943-.78-1.468-.78c-.695 0-.986.343-1.469.343c-.498 0-.867-.344-1.469-.344zM13.5 22.22c.706 0 1.281.575 1.281 1.281s-.575 1.281-1.281 1.281a1.283 1.283 0 0 1-1.281-1.281c0-.706.575-1.281 1.281-1.281z"/></svg></button></a>
+  <a href="#"><button id="buttonmenu"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 20 20"><path fill="#828282" d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 0v14h12V2H4zm6 17a1 1 0 1 0 0-2a1 1 0 0 0 0 2z"/></svg></button></a>
+  <a href="#"><button id="buttonmenu"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#8a8a8a" d="M4 5v11h16V5H4Zm-2-.993C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007V18H2V4.007ZM1 19h22v2H1v-2Z"/></svg></button></a>
+  <a href="#"><button id="buttonmenu"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#8a8a8a" fill-rule="evenodd" d="M16.497 5.03c0 .048-.001.096-.004.143A3.001 3.001 0 0 1 18.5 8.005v1h1v4h-1v3a3 3 0 0 1-2.005 2.83a3 3 0 0 1-2.995 3.17h-4a3 3 0 0 1-2.995-3.17a3.001 3.001 0 0 1-2.005-2.83v-8a3 3 0 0 1 2.003-2.83a3 3 0 0 1 3.01-3.18l4 .02a3 3 0 0 1 2.984 3.015Zm-8-.025h6a1 1 0 0 0-.995-.99l-4-.02a1 1 0 0 0-1.004.995v.015Zm7.208 2.021l-4.22-.021H7.5a1 1 0 0 0-1 1v8a1 1 0 0 0 .999 1H15.5a1 1 0 0 0 .999-1v-8a1 1 0 0 0-.795-.979ZM8.5 19.005a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1h-6Z" clip-rule="evenodd"/></svg></button></a>
+  <a href="#"><button id="buttonmenu"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 48 48"><path fill="none" stroke="#8a8a8a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M36 4a9 9 0 0 0-9 9v31h6V21.488A8.987 8.987 0 0 0 36 22a9 9 0 0 0 8-4.873V8.873A9 9 0 0 0 36 4ZM12 4a9 9 0 0 1 9 9v31h-6V21.488A8.987 8.987 0 0 1 12 22a9 9 0 0 1-8-4.873V8.873A9 9 0 0 1 12 4Zm3 9h-1m19 0h1"/></svg></button></a>
+  <a href="#"><button id="buttonmenu"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#919191" d="M7.189 6.9s-.932.005-1.602.888c-.596.785-.444 1.457-.444 1.457s.808.14 1.519-.714c.666-.8.527-1.63.527-1.63m4.47.615V9.83h-.939v1.403h.94v4.098c0 1.089.64 1.756 1.851 1.756c.39 0 .763-.054 1.117-.163c.354-.11.653-.218.898-.327l-.367-1.443c-.11.045-.613.258-.994.258c-.402 0-.68-.2-.68-.694v-3.485h1.497V9.829h-1.498V7.515zM7.047 9.353c-.833 0-1.473.474-1.818.474c-.401 0-1-.446-1.773-.446C2.267 9.381 1 10.445 1 12.474c0 2.06 1.496 4.626 2.68 4.626c.413 0 1.048-.417 1.688-.417c.628 0 1.091.401 1.687.401c1.298 0 2.258-2.703 2.258-2.703s-1.374-.532-1.374-2.076c0-1.368 1.103-1.932 1.103-1.932s-.564-1.02-1.998-1.02m8.725.476l2.628 7.134h1.974L23 9.83h-1.715l-1.824 5.65l-1.811-5.65z"/></svg></button></a>
+</div>
+</nav>
+<!-- fine menu veloce -->
+<br>
+<!-- inizio box 2 dei 6 articoli -->
+<div style="display: grid;grid-template-columns:auto auto;gap:10px;margin:20px;" class="box2">
+<!-- articolo 4 -->
+<div class="contenitore4">
+<h1>iPad Air</h1>
+<h2>Adesso con i superpoteri del Chip M3. </h2>
+<button>Scopri di più</button>
+<button>Aquista</button>
+</div>
+<!-- articolo 5 -->
+<div class="contenitore5">
+<h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+    </svg>Watch <p>Series 11</p> </h1>
+<h2>Il meglio per tenere d'occhio la tua salute.</h2>
+<button>Scopri di più</button>
+<button>Aquista</button>
+</div>
+<!-- articolo 6 -->
+<div class="contenitore6">
+<h1>MacBook Air</h1>
+<h2>Colore Celeste. Con prestazioni celestiali, con M4.<br> </h2>
+<button>Scopri di più</button>
+<button>Aquista</button>
+</div>
+<!-- articolo 7 -->
+<div class="contenitore7">
+<h1>iPad</h1>
+<h2>Ora con il velocissimo chip A16 e il doppio <br> dello spazio di archiviazione base</h2>
+<button>Scopri di più</button>
+<button>Aquista</button>
+</div>
+<!-- articolo 8 -->
+<div class="contenitore8">
+<h1>Watch <p> SE 3</p></h1>
+<h2>Ti motiva,si connette, ti informa. Ti piace.</h2>
+<button>Scopri di più</button>
+<button>Aquista</button>
+</div>
+<!-- articolo 9 -->
+<div class="contenitore9">
+<h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+    </svg>Trade In</h1>
+<h2>Ricevi un credito di € 190 a € 780 <br> se dai in permuta il tuo iPhone 13 <br> o successivo. <sup>2</sup></h2>
+<button>Guarda quanto vale</button>
+</div>
+<!-- fine box dei 6 articoli -->
+</div>
+<br>
+<!-- cambiare background al carousel in nero -->
+<div style="background-color: black;padding: 50px;">
+<!-- Carousel -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"><!-- Invasion -->
+    <img src="https://aiptcomics.com/wp-content/uploads/2021/10/Screen-Shot-2021-10-14-at-10.12.48-PM.png" style="width:100%;height:800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+  <div class="mySlides fade"><!-- Pachinko -->
+    <div class="numbertext"></div>
+    <img src="https://i.redd.it/planned-number-of-seasons-for-apple-tv-shows-v0-ynvefrysf97e1.jpg?width=3840&format=pjpg&auto=webp&s=023ffcfa63ffc286d4dff2130f556b6ad3c0fb57" style="width: 100%;height:800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+  <div class="mySlides fade"><!-- fall all mankind -->
+    <div class="numbertext"></div>
+    <img src="https://images.everyeye.it/img-notizie/for-mankind-5-sappiamo-futuro-serie-apple-tv-v3-712558.jpg" style="width:100%;height:800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+   <div class="mySlides fade"><!-- ghosted -->
+    <div class="numbertext"></div>
+    <img src="https://macmagazine.com.br/wp-content/uploads/2023/03/06-Ghosted-Sem-resposta.jpeg" style="width:100%;height:800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+   <div class="mySlides fade"><!-- Wolfwarkes -->
+    <div class="numbertext"></div>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqCCk4T0NVbbUM3HhdFmVOjADIv6eEFOuKptBkwvNFKCoshH9Jy_Crofx3qBYcKYT2MYp6EkyZkux5PyOdrIOhnDSDopKuvN3upZlEjBmXcDY-fsGcP59BmUzcj0zPsYg-HemGJ8YfyBMd/s2048/1.jpg" style="width:100%; height:800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+   <div class="mySlides fade"><!-- monarch -->
+    <div class=numbertext></div>
+    <img src="https://www.melamorsicata.it/wp-content/uploads/2024/01/Monarch-Legacy-of-Monsters-2048x1070.png.webp" style="width:100%;height:800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+   <div class="mySlides fade"><!-- pluribus -->
+    <div class="numbertext"></div>
+    <img src="https://static.iphoneitalia.com/wp-content/uploads/2025/11/plubibus-apple-tv.jpg.webp" style="width:100%;height:800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+   <div class="mySlides fade"><!-- see -->
+    <div class="numbertext"></div>
+    <img src="https://hips.hearstapps.com/hmg-prod/images/apple-tv-see-key-art-16-9-1572632632.jpg" style="width:100%;height:800px">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+   <div class="mySlides fade"><!-- the morning show -->
+    <div class="numbertext"></div>
+    <img src="https://www.apple.com/tv-pr/articles/2025/08/apples-emmy-sag-and-critics-choice-award-winning-drama-the-morning-show-unveils-season-four-trailer/images/big-image/big-image-01/082025_The_Morning_Show_S4_Trailer_Announcement_Big_Image_01_big_image_post.jpg.slideshow_large.jpg" style="width:100%;height: 800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+   <div class="mySlides fade"><!-- home before dark -->
+    <div class="numbertext"></div>
+    <img src="https://www.gogomagazine.it/wp-content/uploads/2020/04/Home-Before-Dark-Logo.jpg" style="width:100%;height: 800px;">
+    <div class="text"><a href="#"><button id="buttonTv">Guarda in streaming</button></a></div>
+  </div>
+
+ 
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+</div><!-- fine background carousel -->
+<br> 
+
+<div style="width: 50%;text-align: center;" class="endpage">
+
+<br><!-- Spazio -->
+<hr>
+<div class="boxend">
+    <div class="a">
+        <p id="categoria">Scopri e Aquista</p>
+          <a id="elementi" href="#">Store</a>
+          <a id="elementi" href="#">Mac</a>
+          <a id="elementi" href="#">Ipad</a>
+          <a id="elementi" href="#">Iphone</a>
+          <a id="elementi" href="#">Watch</a>
+          <a id="elementi" href="#">AirPods</a>
+          <a id="elementi" href="#">TV & Casa</a>
+          <a id="elementi" href="#">AirTag</a>
+          <a id="elementi" href="#">Accessori</a>
+          <a id="elementi" href="#">Carta Regalo</a>
+    </div>
+<div class="b">
+     <p id="categoria">Account</p>
+          <a id="elementi" href="#">Gestisci il tuo Apple Account</a>
+          <a id="elementi" href="#">Account Apple Store</a>
+          <a id="elementi" href="#">ICloud.com</a>
+</div>
+      <div class="c">
+           <p id="categoria">Apple Store</p>
+          <a id="elementi" href="#">Trova uno Store</a>
+          <a id="elementi" href="#">Genius Bar</a>
+          <a id="elementi" href="#">Today at Apple</a>
+          <a id="elementi" href="#">Prenotazioni di gruppo</a>
+          <a id="elementi" href="#">Campo estivo Apple</a>
+          <a id="elementi" href="#">L'app Apple Store</a>
+          <a id="elementi" href="#">Ricondizionati Certificati</a>
+          <a id="elementi" href="#">Apple Trade In</a>
+          <a id="elementi" href="#">Finanziamenti</a>
+          <a id="elementi" href="#">Stato dell'ordine</a>
+          <a id="elementi" href="#">Assistenza agli Aquisti</a>
+      </div>
+<div class="d">
+     <p id="categoria">Intrattenimento</p>
+          <a id="elementi" href="#">Apple One</a>
+          <a id="elementi" href="#">Apple TV</a>
+          <a id="elementi" href="#">Apple Music</a>
+          <a id="elementi" href="#">Apple Arcade</a>
+          <a id="elementi" href="#">Apple Fitness+</a>
+          <a id="elementi" href="#">ApplePodcasts</a>
+          <a id="elementi" href="#">Apple Books</a>
+          <a id="elementi" href="#">AppStore</a>
+</div>
+      <div class="e">
+           <p id="categoria">Business</p>
+          <a id="elementi" href="#">Apple per il Business</a>
+          <a id="elementi" href="#">Aquisti per le Aziende</a>
+      </div>
+<div class="f">
+      <p id="categoria">Istruzione</p>
+          <a id="elementi" href="#">Apple nell'istruzione</a>
+          <a id="elementi" href="#">Aquisti per l'università</a>      
+</div>
+      <div class="g">
+           <p id="categoria">Per la Salute</p>
+          <a id="elementi" href="#">Apple e la salute</a>
+      </div>
+<div class="h">
+      <p id="categoria">I valori di Apple</p>
+          <a id="elementi" href="#">Accessibilità</a>
+          <a id="elementi" href="#">Istruzione</a>
+          <a id="elementi" href="#">Ambiente</a>
+          <a id="elementi" href="#">Privacy</a>
+          <a id="elementi" href="#">Innovazioni nella filiera</a>
+</div>
+      <div class="i">
+           <p id="categoria">Info su Apple</p>
+          <a id="elementi" href="#">Newsroom</a>
+          <a id="elementi" href="#">LeaderShip Apple</a>
+          <a id="elementi" href="#">Opportunità di lavoro</a>
+          <a id="elementi" href="#">Garanzia</a>
+          <a id="elementi" href="#">Investitori</a>
+          <a id="elementi" href="#">Etica e rispetto delle norme</a>
+          <a id="elementi" href="#">Eventi</a>
+          <a id="elementi" href="#">Posti di lavoro in Europa</a>
+          <a id="elementi" href="#">Contatti</a>
+      </div>
+</div>
+ <p>Altri modi per aquistare: <a href="#">Trova l'Apple Store</a> o <a href="#">rivenditore</a>più vicino.O chiama il numero <a href="#">800 554 533</a>.</p>
+
+<hr>
+<p>Copyright © 2025 Apple Inc. Tutti i diritti riservati.</p>
+<p>Italia</p>
+<br>
+</div><!-- Endpage -->
+
+<!-- JVS -->
+<script>
+/* JVS Carousel */
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+/* automatic carousel*/
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides,4000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
