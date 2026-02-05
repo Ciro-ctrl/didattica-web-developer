@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu si pe'Sempe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet"><!-- font titolo centrale("Fleur De Leah", cursive;) -->
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet"><!--Font sottotitolo ("Tangerine", cursive;)  -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet"><!-- font body("DM Serif Text", serif;) -->
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet"><!-- font text carousel ( "Petit Formal Script", cursive;) -->
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet"><!-- Prenotazione appuntamenti Cbtn ("Special Gothic Expanded One", sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"><!-- paragrafi -->
+</head>
+<!-- Css -->
+<style>
+*{box-sizing: border-box;}
+
+body{margin: 0%;
+     padding: 0%;
+     font-family: "DM Serif Text", serif;
+}
+
+/* Carousel__________________________________________________________________ */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 0%;
+  margin-top:-40px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: transparent;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 500px;
+  width: 100%;
+  text-align: center;
+  font-family:  "Petit Formal Script", cursive;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color:white;
+  position: relative;
+  top:-300px;
+  right:-95%;
+  border-radius: 50%;
+  display:block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.button{position: absolute;
+        z-index:1;
+        right:50%;
+        top:600px;     
+}
+
+#Cbtn{text-align: center;
+      width: 200%;
+      height:60px;
+      position: relative;
+      bottom:-40px;
+      background-color: transparent;
+      border-color: white;
+      color: white;
+      letter-spacing: 2px;
+      font-family: "Special Gothic Expanded One", sans-serif;
+      text-transform: uppercase;
+}
+
+#Cbtn:hover{background-color:white;
+            border-color: transparent;
+            color: goldenrod;
+
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* paragrafi_____________________________________________ */
+p{font-family:"Playfair Display", serif;
+  font-size:large;
+  font-weight: 500;
+
+}
+
+/* Nome dello store_____________________________________*/
+#titolo{position:absolute;
+         z-index: 1;
+         text-align: center;
+         justify-content: center;
+         width: 100%;
+         color: white;
+         background-color: transparent;
+          font-family: "Fleur De Leah", cursive;
+          font-size:80px;
+          top:-50px;
+          font-weight: 100;
+}
+
+#sottotitolo{position:absolute;
+             z-index: 1;
+             top:60px;
+             text-align: center;
+             justify-content: center;
+             width: 100%;
+             color: white;
+             font-size:40px;
+             background-color: transparent;
+             font-family:"Tangerine", cursive;
+
+}
+/* social________________________________________ */
+.social{display: flex;
+       flex-direction: column;
+       gap: 10px; /* spazio tra i bottoni */
+       width: 150px; /* opzionale */
+       position: absolute;
+       z-index: 1;
+       bottom:20px;
+       left:4%;
+}
+
+#btn{ border-radius:50% 50%;
+     border-color: transparent;
+     padding:10px;
+     color: rgb(169, 161, 161);
+}
+
+#btn:hover{color: goldenrod;
+           background-color: white;
+
+}
+/* Top NavBar___________________________________________ */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family:"Tangerine", cursive;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color:goldenrod;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Bottone hamburger */
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color:transparent;
+  position:fixed ;
+  top:50px;
+  left:3%;
+  z-index:1;
+  color: whitesmoke;
+  padding: 12px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:transparent;
+  color: goldenrod;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+</style>
+<!-- onload nel body che carica un poppup -->
+<body>
+<!-- titolo dello store -->
+<a href="#"><h1 id="titolo">Nu si pe' sempe</h1></a>
+<a href="#"><h3 id="sottotitolo">Sposi e Cerimonie</h3></a>
+
+<!-- Top NavBar -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a style="font-size:40px;" href="#">Home</a>
+  <a style="font-size:40px;" href="#">Abiti</a>
+  <a style="font-size:40px;" href="#">Prenota</a>
+  <a style="font-size:40px;" href="#">Punto Vendita</a>
+  <a style="font-size:40px;" href="#">Blog e News</a>
+  
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+</div>
+
+<!-- social in Carousel-->
+<div class="social">
+    <!-- ista -->
+    <a href="#">
+        <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+        </button>
+    </a>
+    <!-- fb -->
+    <a href="#">
+        <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+        </button>
+    </a>
+    <!-- whatsapp -->
+    <a href="#">
+        <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
+       </button>
+    </a>
+    <!-- tiktok -->
+    <a href="#">
+        <button id="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg>
+        </button>
+    </a>
+
+</div>
+<!-- Carousel 4 foto 1.foto sposa quando l amore diventa abito 2.foto sposa Per il tuo si piu bello 3.foto sposo il tuo giorno il tuo stile 4.foto sposo e sposa a napoli per il vostro per sempre -->
+<div class="slideshow-container">
+<!-- Slide1 -->
+  <div class="mySlides fade">
+     <div class="numbertext"></div>
+    <img src="https://images.unsplash.com/photo-1549488497-94b52bddac5d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHZlc3RpdG8lMjBkYSUyMHNwb3NhfGVufDB8fDB8fHww" style="width:100%;height:1100px;">
+    <div class="text">Quando l'amore diventa abito.</div>
+    <div class="button"><a id="btnhover" href="#"><button  id="Cbtn">Prenota il tuo appuntamento</button></a></div>
+  </div>
+<!-- slide2 -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://www.michelaferriero.it/wp-content/uploads/2021/10/1-scaled-1.jpg" style="width:100%;height: 1100px;">
+    <div class="text">Per il tuo "si" più bello.</div>
+    <div class="button"><a  id="btnhover" href="#"><button  id="Cbtn">Prenota il tuo appuntamento</button></a></div>
+  </div>
+<!-- Slide3 -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://www.sposissimi.com/wp-content/uploads/2023/03/10_46JX224C_v2-scaled.jpg" style="width:100%;height:1100px;">
+    <div class="text">Il tuo giorno,il tuo stile.</div>
+    <div class="button"><a  id="btnhover" href="#"><button id="Cbtn">Prenota il tuo appuntamento</button></a></div>
+  </div>
+<!-- Slide4 -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="https://carpeggianisposi.it/wp-content/uploads/2025/09/CLIPA_1_A-scaled.jpg" style="width:100%;height:1100px;">
+    <div class="text">Per il vosto per sempre.</div>
+    <div class="button"><a  id="btnhover" href="#"><button id="Cbtn">Prenota il tuo appuntamento</button></a></div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<div class="motivation">  
+    <h1 style="text-align: center;font-family:Petit Formal Script,cursive;" id="mot1">
+        Trova l’abito che racconta la tua storia. <br> Eleganza, dettagli sartoriali e tessuti preziosi ti aspettano per trasformare il tuo sogno in realtà.
+    </h1>
+    <br> <br> <br>
+<hr style="width: 50%;">
+   <br> <br> <br>
+</div>
+<!-- servizi disponibili servizio sartoria con foto dx-->
+<div style="display: flex;margin:20px;" class="sartoria">
+     <div style="background-color:#abc2b8;width:10%;height:800px;"></div>
+         <div style="width:50%;text-align: center;" id="txtsarto">  
+             <h1 style="font-family:Petit Formal Script,cursive;"><!-- h1 -->  
+                Il Tuo Giorno, Il Tuo Abito.
+             </h1>
+                 <p> Un luogo dove ogni abito nasce per raccontare una storia unica.</p>
+                    <p>Nel nostro atelier uniamo la raffinatezza delle collezioni sposa all’arte della sartoria su misura,</p>
+                  <p>curando ogni dettaglio con passione e maestria artigianale.</p>
+                <p>Tessuti pregiati, linee personalizzate e un servizio dedicato trasformano il sogno di ogni sposa in realtà.</p>
+          </div>
+      <div class="imgsarto">  
+          <img style="width:100%;justify-content: right;height: 800px;" src="https://www.ernesto.it/api/v1/medias/get/s/md-575a2047-6ac4-450c-ab0e-3d23dcb3f897/modificare-l-abito-da-sposa" alt="">
+      </div>
+</div>
+
+<br> <br> <br>
+
+<!-- articolo collezioni spose-->
+<div style="margin: 20px;display:flex;" class="sposa">
+    <div style="display: grid;grid-template-columns: auto auto;gap: 10px;" class="imgsposa">
+        <img  style="width:100%;height:800px;" src="https://www.atelierlucente.it/wp/wp-content/uploads/2025/08/Joris-Lunanovias-Collezione-Sposa-Atelier-Lucente-001.jpg" alt="">
+
+        <img  style="width:100%;height:800px;" src="https://www.lesposedimori.it/wp-content/uploads/2025/07/berta-2026-26-05-gonna-ampia.jpg" alt="">
+    </div>
+        <div style="text-align: center;width: 50%;" class="txtsposa">
+            <h1 style="font-family:Petit Formal Script,cursive ;">  
+               La Scelta del Tuo Abito Perfetto.
+            </h1>
+                <p>Nel nostro atelier ogni sposa trova l’abito perfetto per il suo giorno speciale.</p> 
+                    <p>Offriamo una selezione curata di modelli esclusivi e un servizio di consulenza personalizzata,</p>
+                  <p>accompagnandoti dalla scelta fino alle ultime rifiniture sartoriali.</p>
+              <p>Ogni dettaglio è pensato per valorizzarti e farti sentire unica, sicura e radiosa.</p>
+         </div>
+   <div style="background-color:#f1d2cf;width:10%;height:800px;"></div>
+</div>
+
+<br> <br> <br>
+
+<!-- abiti sposo -->
+<div style="margin: 20px;display:flex;" class="sposo">
+     <div style="background-color:#6d836e;width:10%;height:800px;"></div>
+  <div style="text-align: center;width: 50%;" class="txtsposo">
+    <h1 style="font-family:Petit Formal Script,cursive ;">  
+        L’Abito Perfetto per il Tuo Sì.
+    </h1>
+        <p>Per il giorno più importante, anche lo sposo merita un abito che esprima stile, personalità e comfort.</p>
+             <p> Nel nostro atelier proponiamo completi raffinati,</p>
+          <p>tessuti di alta qualità e lavorazioni sartoriali curate nei minimi dettagli.</p>
+            <p>Dalla scelta del modello alle modifiche su misura,</p>
+              <p>ti accompagniamo in ogni fase per creare un look impeccabile,</p>
+            <p>pensato esclusivamente per te.</p>
+  </div>
+<div style="display: grid;grid-template-columns: auto auto;gap: 10px;" class="imgsposo"> 
+    <img  style="width:100%;height:800px;" src="https://www.pigal.com/atelier/wp-content/uploads/sites/2/pigal-atelier-bergamo-abito-vestito-completo-sposo-cerimonia-matrimonio-petrelli-uomo-verde-scarabeo-smoking-N20004D_CAMP_196_S25_1941-2.jpg" alt="">
+       <img  style="width:100%;height:800px;" src="https://www.mariages.it/wp-content/uploads/2021/01/thomas-pina-2021-abito-vestito-sposo-vicenza-2121300-2.jpg" alt="">
+</div>
+</div>
+
+<br> <br> <br>
+
+<!-- outlet abiti da sposa -->
+<div  style="margin: 20px;display:flex;" class="outlet">
+     <div style="display: grid;grid-template-columns: auto auto;gap: 10px;" class="imgoutlet"> 
+        <img style="width:100%;height:800px;" src="https://www.ersiliaprincipe.it/wp-content/uploads/2025/07/image00002.jpg" alt="">
+           <img style="width:100%;height:800px;" src="https://gabriellasposa.com/wp-content/uploads/2025/09/abiti-sposa-2026-pronovias-barcelona-evies-2-p.jpg" alt="">
+    </div>
+         <div  style="text-align: center;width: 50%;"  class="txtoutlet">
+             <h1 style="font-family:Petit Formal Script,cursive ;">  
+                Outlet Sposa. <br>
+                abiti outlet scontati dell'80%,
+                trova l'abito da sposa perfetto nei nostri outlet. <br>
+                Un esclusiva selezione di centinaia di abiti a 990€.
+              </h1>
+          <p>Il tuo abito da sogno può essere più vicino di quanto immagini.</p>
+             <p> Nel nostro outlet scopri creazioni uniche,</p>
+             <p>preziosi tessuti e dettagli artigianali a condizioni speciali. </p>
+                <p>Un’opportunità per vivere la magia del tuo giorno con eleganza, qualità e convenienza.</p>
+  </div>
+      <div style="background-color:#ffe4cf;width:10%;height:800px;"></div>
+</div>
+     
+<br> <br> <br>
+
+<!-- Abiti da cerimonia -->
+<div class="cerimonia">
+    <div class="imgcerimonia">
+        <img style="width: 100%; height:900px;" src="https://images.prismic.io/rinascimento/65b0ebb0615e73009ec3e140_Atelier.jpg" alt="">
+    </div>
+  <div style="position: relative;top:-700px;left:7%;padding:10px;letter-spacing:1px;" class="txtcerimonia">
+    <h1 style="font-family:Petit Formal Script,cursive ;">  
+        Eleganza per Ogni Occasione.
+    </h1>
+        <p>Che tu sia invitata, testimone o protagonista,</p>
+           <p>troverai l’abito perfetto per vivere il tuo evento con sicurezza e raffinatezza.</p>
+             <p>Proponiamo un’ampia scelta di vestiti da cerimonia,</p>
+               <p> dai tagli classici a quelli più moderni,</p>
+          <p>con possibilità di modifiche sartoriali per una vestibilità su misura.</p>
+  </div>
+</div>
+
+<!-- abiti sposa limited edition -->
+<div style="position: relative;top:-200px;" class="limitededition">
+    <div>
+       <img style="width:100%;height:1000px" src="https://www.ideasposa.it/wp-content/uploads/2025/08/Verity-5.jpg" alt="">
+    </div>
+  <div style="position: relative;top:-900px;left:3%;color: white;letter-spacing: 2px;" class="editiontext">
+      <h1 style="font-family:Petit Formal Script,cursive;">Solo pochi, come te</h1>
+         <p>Ogni abito nasce in edizione limitata,</p>
+          <p>realizzato in pochi esemplari numerati.</p>
+            <p>Tessuti pregiati, lavorazioni sartoriali e dettagli couture</p>
+              <p>trasformano ogni creazione in un pezzo irripetibile, </p>
+                 <p> pensato per chi desidera distinguersi con eleganza autentica.</p>
+        <div style="position:relative;top:50px;left:5%;"><a style="color: white;font-family:Petit Formal Script,cursive;font-size:x-large;" href="#">Limited edition</a></div>
+  </div>      
+</div>
+<script>
+/* Carousel JVS____________________________________________*/
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";  
+}
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 12000); // Change image every 10 seconds
+}
+
+/* Top NavBar_________________________ */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
